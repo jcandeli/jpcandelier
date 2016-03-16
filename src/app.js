@@ -1,1 +1,1 @@
-console.log('This is the app.js');
+require('./components/test-component.jsx');
