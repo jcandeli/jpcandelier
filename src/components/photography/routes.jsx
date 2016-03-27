@@ -6,7 +6,7 @@ import { Gallery } from './gallery.jsx';
 export const routes = (
     <Router history={browserHistory}>
         <Route name="home" path="/" component={Home}>
-            <IndexRoute component={Gallery}/>
+            <Route name="gallery(/:galleryType)" path="gallery" component={Gallery}></Route>
         </Route>
     </Router>
 );
