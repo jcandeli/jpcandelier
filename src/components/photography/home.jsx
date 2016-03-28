@@ -1,7 +1,7 @@
 import React from 'react';
 import { MainNav } from './navigation.jsx';
 
-export let Home = React.createClass({
+export const Home = React.createClass({
     render() {
         return (
             <div>

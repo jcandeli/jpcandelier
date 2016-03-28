@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-export let MainNav = React.createClass({
+export const MainNav = React.createClass({
     render() {
         return (
             <div className="nav">
