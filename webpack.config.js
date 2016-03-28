@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = {
     context: __dirname,
     entry: [
@@ -6,8 +8,10 @@ module.exports = {
     ],
     output: {
         path: __dirname + "/dist",
-        filename: "bundle.js"
+        filename: "bundle.js",
+        sourceMapFilename: "bundle.map"
     },
+    devtool: '#source-map',
     module: {
         loaders: [
             {
@@ -28,5 +32,9 @@ module.exports = {
                 loader: "style!css"
             }
         ]
+    },
+    resolve: {
+        root: path.resolve('./src'),
+        extenstions: ['', '.js', '.jsx']
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainNav } from './navigation.jsx';
+import { MainNav } from 'components/photography/navigation.jsx';
 
 export const Home = React.createClass({
     render() {

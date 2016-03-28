@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router, Link, Route, IndexRoute, browserHistory } from 'react-router';
-import { Home } from './home.jsx';
-import { Gallery } from './gallery.jsx';
+import { Home } from 'components/photography/home.jsx';
+import { Gallery } from 'components/photography/gallery.jsx';
 
 export const routes = (
     <Router history={browserHistory}>
