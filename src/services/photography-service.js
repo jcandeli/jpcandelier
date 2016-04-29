@@ -2,6 +2,7 @@ import store from 'stores/photography-store';
 import { selectGalleryAction } from 'actions/photography-actions';
 
 export var getGalleryPhotos = function (gallery) {
-    let action = selectGalleryAction(gallery);
-    store.dispatch(action);
+    console.log('getGalleryPhotos');
+    // let action = selectGalleryAction(gallery);
+    // store.dispatch(action);
 };

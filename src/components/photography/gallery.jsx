@@ -1,8 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { connect } from 'react-redux';
-import { getGalleryPhotos } from 'services/photography-service';
-import store from 'stores/photography-store';
 
 export const Gallery = React.createClass({
     render: function() {
@@ -14,10 +12,11 @@ export const Gallery = React.createClass({
     }
 });
 
-const stateToProps = function(state) {
+const mapStateToProps = function(state) {
     return {
-        galleryType: state.selectGalleryReducer.selectedGallery.type
+        galleryType: state.selectedGallery.type
     }
 }
 
-export default connect(stateToProps)(Gallery);
+
+export default connect(mapStateToProps)(Gallery);

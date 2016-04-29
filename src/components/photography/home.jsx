@@ -5,8 +5,9 @@ export const Home = React.createClass({
     render() {
         return (
             <div>
-                <MainNav></MainNav>
-                {this.props.children}
+                <h2>fds</h2>
+                // <MainNav></MainNav>
+                // {this.props.children}
             </div>
         );
     }
