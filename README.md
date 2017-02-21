@@ -6,6 +6,4 @@ My personal website and portfolio site for http://jpcandelier.com
 * Redux
 * Webpack
 * ES6 (Babel)
-* json-server (?)
-* axios or jquery (?)
 
