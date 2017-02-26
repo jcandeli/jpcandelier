@@ -1,0 +1,23 @@
+body {
+    background-color: #eee;
+}
+
+.thumb {
+    float:left;
+    width: 16%;
+    padding-bottom : 16%; /* = width for a 1:1 aspect ratio */
+    margin: 0.33%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.thumb.selected {
+    opacity: 0.2;
+}
+
+.image-panel {
+    float: left;
+    width: 100%;
+    background-color: #252525;
+}

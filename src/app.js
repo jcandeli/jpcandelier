@@ -1,4 +1,11 @@
+import React from 'react';
 import { render } from 'react-dom';
-import { routes } from 'components/photography/routes.jsx';
+import { Route, Router, browserHistory } from 'react-router';
+import Home from 'components/Home';
 
-render(routes, document.getElementById('app'));
+render(
+    <Router history={browserHistory}>
+        <Route path="/" component={Home} />
+    </Router>,
+    document.getElementById('app')
+);
