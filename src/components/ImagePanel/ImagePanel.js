@@ -1,23 +1,24 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { actions } from '../../redux/photos';
+import React, { Component, PropTypes } from 'react';
 
 export class ImagePanel extends Component {
     render() {
         const { photo } = this.props;
         return (
-            <div className="image-panel">
-                <img src={`/img/${photo.category}/${photo.image}`} />
-            </div>
+            <div className="image-panel">{
+                (photo)
+                ? <img src={`/img/${photo.category}/${photo.image}`} />
+                : null
+            }</div>
         );
     }
 }
 
-function mapStateToProps({ selectedPhoto }) {
-  return { photo: selectedPhoto };
-}
+ImagePanel.defaultProps = {
+    photo: null
+};
 
-export default connect(
-  mapStateToProps,
-  actions
-)(ImagePanel);
+ImagePanel.propTypes = {
+    photo: PropTypes.object
+};
+
+export default ImagePanel;

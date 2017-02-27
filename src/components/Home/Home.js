@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import photosReducer from '../../redux/photos';
 
 import Mosaic from '../Mosaic';
+import Navigation from '../Navigation';
 import photoDB from '../../photoDB';
 
 const store = createStore(
@@ -16,7 +17,8 @@ export class Home extends Component {
         return (
             <Provider store={store}>
                 <div>
-                    <Mosaic photos={photoDB} />
+                    <Navigation />
+                    <Mosaic photos={photoDB} columns={6} />
                 </div>
             </Provider>
         );

@@ -20,6 +20,7 @@
   "homepage": "https://github.com/jcandeli/jpcandelier#readme",
   "dependencies": {
     "babel-preset-stage-2": "^6.22.0",
+    "classnames": "^2.2.5",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-redux": "^4.4.1",
