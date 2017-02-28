@@ -15,9 +15,9 @@ export const actions = {
         category
     }),
 
-    selectPhoto: (photo) => ({
+    selectPhoto: (index) => ({
         type: constants.SELECT_PHOTO,
-        photo
+        index
     }),
 
     deselectPhoto: () => ({
@@ -31,21 +31,22 @@ export const actions = {
 };
 
 export const defaultState = {
-    selectedPhoto: null,
     selectedCategory: constants.CATEGORY_ALL,
-    expandedRow: 0
+    expandedRow: 0,
+    currentIndex: 0
 };
 
 export default function reducer(state = defaultState, action = {}) {
     switch (action.type) {
     case constants.SELECT_CATEGORY:
-        return { ...state, selectedCategory: action.category }
+        return { ...state, selectedCategory: action.category, currentIndex: 0 };
     case constants.SELECT_PHOTO:
-        return { ...state, selectedPhoto: action.photo }
+        return { ...state, currentIndex: action.index };
     case constants.DESELECT_PHOTO:
+        return { ...state, currentIndex: 0 };
     case constants.EXPAND_ROW:
-        return { ...state, expandedRow: action.rowIndex }
+        return { ...state, expandedRow: action.rowIndex };
     default:
-    return state;
+        return state;
     }
 }
