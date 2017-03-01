@@ -1,0 +1,27 @@
+body {
+    background-color: #eee;
+}
+
+.thumbs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.thumb {
+    width: 16%;
+    padding-bottom: 16%;
+    margin: 0.375% 0;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.thumb.selected {
+    filter: blur(2px) grayscale(100%);
+}
+
+.image-panel {
+    padding: 20px;
+    width: 100%;
+    background-color: #e4e4e4;
+}
