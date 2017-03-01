@@ -33,17 +33,17 @@ export const actions = {
 export const defaultState = {
     selectedCategory: constants.CATEGORY_ALL,
     expandedRow: 0,
-    currentIndex: 0
+    currentIndex: -1
 };
 
 export default function reducer(state = defaultState, action = {}) {
     switch (action.type) {
     case constants.SELECT_CATEGORY:
-        return { ...state, selectedCategory: action.category, currentIndex: 0 };
+        return { ...state, selectedCategory: action.category, currentIndex: -1 };
     case constants.SELECT_PHOTO:
         return { ...state, currentIndex: action.index };
     case constants.DESELECT_PHOTO:
-        return { ...state, currentIndex: 0 };
+        return { ...state, currentIndex: -1 };
     case constants.EXPAND_ROW:
         return { ...state, expandedRow: action.rowIndex };
     default:

@@ -2,9 +2,6 @@ body {
     background-color: #eee;
 }
 
-.row {
-}
-
 .thumbs {
   display: flex;
   justify-content: space-between;
@@ -20,15 +17,11 @@ body {
 }
 
 .thumb.selected {
-    opacity: 0.2;
+    filter: blur(2px) grayscale(100%);
 }
 
 .image-panel {
     padding: 20px;
     width: 100%;
     background-color: #e4e4e4;
-}
-
-.hide {
-    display: none;
 }

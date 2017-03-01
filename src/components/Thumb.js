@@ -1,12 +1,14 @@
 import React, { Component, PropTypes } from 'react';
+import cx from 'classnames';
 
 export default class Thumb extends Component {
     render() {
-        const { photo, onClick } = this.props;
+        const { photo, onClick, selected } = this.props;
+        const classNames = cx('thumb', { selected });
         return (
             <div
                 key={photo.image}
-                className="thumb"
+                className={classNames}
                 style={{ backgroundImage: `url(/img/${photo.category}/${photo.image})` }}
                 onClick={onClick}
             />
@@ -16,5 +18,10 @@ export default class Thumb extends Component {
 
 Thumb.propTypes = {
     photo: PropTypes.object.isRequired,
-    onClick: PropTypes.func.isRequired
+    onClick: PropTypes.func.isRequired,
+    selected: PropTypes.bool
+};
+
+Thumb.defaultProps = {
+    selected: false
 };
