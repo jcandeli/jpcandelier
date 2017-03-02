@@ -5,7 +5,7 @@ import Home from './components/Home';
 
 render(
     <Router history={browserHistory}>
-        <Route path="/" component={Home} />
+        <Route path="/(:category)" component={Home} />
     </Router>,
     document.getElementById('app')
 );

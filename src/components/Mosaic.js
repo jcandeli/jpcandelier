@@ -29,6 +29,7 @@ export class MosaicComponent extends Component {
             columns,
             photos,
             selectPhoto,
+            deselectPhoto,
             expandRow,
             expandedRow,
             currentIndex
@@ -54,6 +55,7 @@ export class MosaicComponent extends Component {
                                 photo={photos[currentIndex]}
                                 next={() => selectPhoto(currentIndex + 1)}
                                 prev={() => selectPhoto(currentIndex - 1)}
+                                close={deselectPhoto}
                             /> : null
                         }
                     </div>
@@ -67,6 +69,7 @@ export class MosaicComponent extends Component {
 }
 
 const mapStateToProps = ({
+    photos,
     selectedCategory,
     selectPhoto,
     deselectPhoto,
@@ -74,6 +77,7 @@ const mapStateToProps = ({
     expandedRow,
     currentIndex
 }) => ({
+    photos,
     selectedCategory,
     selectPhoto,
     deselectPhoto,

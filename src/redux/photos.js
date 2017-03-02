@@ -1,11 +1,13 @@
+import photoDB from '../photoDB';
+
 export const constants = {
     SELECT_PHOTO: 'SELECT_PHOTO',
     DESELECT_PHOTO: 'DESELECT_PHOTO',
     SELECT_CATEGORY: 'SELECT_CATEGORY',
-    CATEGORY_ALL: 'CATEGORY_ALL',
-    CATEGORY_TRAVEL: 'CATEGORY_TRAVEL',
-    CATEGORY_BANDS: 'CATEGORY_BANDS',
-    CATEGORY_LIFE: 'CATEGORY_LIFE',
+    CATEGORY_HOME: 'home',
+    CATEGORY_TRAVEL: 'travel',
+    CATEGORY_BANDS: 'bands',
+    CATEGORY_LIFE: 'life',
     EXPAND_ROW: 'EXPAND_ROW'
 };
 
@@ -31,15 +33,18 @@ export const actions = {
 };
 
 export const defaultState = {
-    selectedCategory: constants.CATEGORY_ALL,
+    photos: photoDB,
+    selectedCategory: constants.CATEGORY_HOME,
     expandedRow: 0,
     currentIndex: -1
 };
 
 export default function reducer(state = defaultState, action = {}) {
     switch (action.type) {
-    case constants.SELECT_CATEGORY:
-        return { ...state, selectedCategory: action.category, currentIndex: -1 };
+    case constants.SELECT_CATEGORY: {
+        const newPhotos = photoDB.filter((photo) => photo.category === action.category);
+        return { ...state, photos: newPhotos, selectedCategory: action.category, currentIndex: -1 };
+    }
     case constants.SELECT_PHOTO:
         return { ...state, currentIndex: action.index };
     case constants.DESELECT_PHOTO:

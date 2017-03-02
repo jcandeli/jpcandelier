@@ -1,18 +1,18 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router';
 
 import { actions, constants } from '../redux/photos';
 
 export class NavigationComponent extends Component {
     render() {
-        const { selectCategory } = this.props;
         return (
             <nav>
                 <ul>
-                    <li onClick={() => selectCategory(constants.CATEGORY_ALL)}>All</li>
-                    <li onClick={() => selectCategory(constants.CATEGORY_TRAVEL)}>Travel</li>
-                    <li onClick={() => selectCategory(constants.CATEGORY_BANDS)}>Bands</li>
-                    <li onClick={() => selectCategory(constants.CATEGORY_LIFE)}>Life</li>
+                    <Link to={`/${constants.CATEGORY_HOME}`}>All</Link>
+                    <Link to={`/${constants.CATEGORY_TRAVEL}`}>Travel</Link>
+                    <Link to={`/${constants.CATEGORY_BANDS}`}>Bands</Link>
+                    <Link to={`/${constants.CATEGORY_LIFE}`}>Life</Link>
                 </ul>
             </nav>
         );
@@ -20,11 +20,6 @@ export class NavigationComponent extends Component {
 }
 
 const mapStateToProps = ({ selectedCategory }) => ({ selectedCategory });
-
-NavigationComponent.propTypes = {
-    selectedCategory: PropTypes.string,
-    selectCategory: PropTypes.func
-};
 
 const Navigation = connect(
   mapStateToProps,
