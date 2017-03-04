@@ -5,13 +5,13 @@ export default class ImagePanel extends Component {
         const { photo, next, prev, close } = this.props;
         return (
             <div className="image-panel">
-                <a onClick={prev}>prev</a>
+                <a onClick={prev}>&lt;</a>
                 <img src={`/img/${photo.category}/${photo.image}`} alt={photo.name} />
-                <p>{photo.title}</p>
+                <h2>{photo.title}</h2>
                 <p>{photo.location}</p>
                 <p>{photo.camera}</p>
-                <a onClick={next}>next</a>
-                <a onClick={close}>close</a>
+                <a onClick={next}>&gt;</a>
+                <a onClick={close}>&times;</a>
             </div>
         );
     }

@@ -1,10 +1,78 @@
 body {
-    background-color: #eee;
+    background-color: #fbfbfb;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, .header, .bold { 
+    font-family: 'Bebas-Neue'; 
+}
+
+.text-light {
+    font-family: 'Bebas-Neue-Light'; 
+}
+
+.panel {
+    color: #383838;
+    position: absolute;
+    left: calc(50% - 345px);
+    top: 8%;
+    background-color: #fbfbfb;
+    text-align: center;
+}
+
+.panel .panel-content {
+    padding: 150px;
+}
+
+.panel h1, .panel h2 {
+    margin: 0;
+    font-size: 56px;
+    line-height: 24px;
+}
+
+.panel h1 {
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.panel h2 {
+    letter-spacing: 1px;
+}
+
+.panel .logo {
+    position: absolute;
+    left: calc(50% - 225px);
+    top: calc(50% - 225px);
+    height: 450px;
+    opacity: 0.07;
+}
+
+.links a {
+    color: #383838;
+    font-size: 36px;
+    text-decoration: none;
+    font-family: 'Bebas-Neue-Light';
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+.name {
+    margin: 100px 0;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .thumbs {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .thumb {
@@ -17,11 +85,77 @@ body {
 }
 
 .thumb.selected {
-    filter: blur(2px) grayscale(100%);
+    filter: blur(1px) grayscale(100%);
 }
 
 .image-panel {
     padding: 20px;
     width: calc(100% - 40px);
     background-color: #e4e4e4;
+    box-shadow: 0 0 10px #969696 inset;
+}
+
+.image-panel h2 {
+    font-size: 36px;
+}
+
+.main-nav {
+    height: 40px;
+    padding-bottom: 15px;
+    background-color: #fbfbfb;
+    font-size: 36px;
+}
+
+.main-nav a.selected {
+    color: #50bdc3;
+}
+
+.main-nav .logo {
+    max-height: 40px;
+}
+
+.main-nav a {
+    color: #383838;
+    text-decoration: none;
+    font-family: 'Bebas-Neue-Light';
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/**
+ * @license
+ * MyFonts Webfont Build ID 3354006, 2017-03-03T19:36:25-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: BebasNeue by Flat-it
+ * URL: http://www.myfonts.com/fonts/flat-it/bebas-neue/regular/
+ * Copyright: Copyright (c) 2010 by Ryoichi Tsunekawa. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3354006
+ * 
+ * © 2017 MyFonts Inc
+*/
+  
+@font-face {
+    font-family: 'Bebas-Neue';
+    src: url('/fonts/BebasNeue.eot');
+    src: url('/fonts/BebasNeue.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/BebasNeue.woff2') format('woff2'),
+    url('/fonts/BebasNeue.woff') format('woff'),
+    url('/fonts/BebasNeue.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebas-Neue-Light';
+    src:  url('/fonts/Bebas-Neue-Light.ttf.woff') format('woff'),
+    url('/fonts/Bebas-Neue-Light.ttf.svg#Bebas-Neue-Light') format('svg'),
+    url('/fonts/Bebas-Neue-Light.ttf.eot'),
+    url('/fonts/Bebas-Neue-Light.eot?#iefix') format('embedded-opentype'); 
 }

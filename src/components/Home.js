@@ -1,27 +1,56 @@
-/* eslint no-underscore-dangle: ["error", { "allow": ["__REDUX_DEVTOOLS_EXTENSION__"] }] */
+import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
+import { Link } from 'react-router';
+import { actions, constants } from '../redux/photos';
+import Thumb from './Thumb';
 
-import React, { Component } from 'react';
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
-import photosReducer from '../redux/photos';
+export class HomeComponent extends Component {
+    componentWillMount() {
+        this.props.selectCategory(constants.CATEGORY_TRAVEL);
+    }
 
-import Mosaic from './Mosaic';
-import Navigation from './Navigation';
-
-const store = createStore(
-    photosReducer,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
-
-export default class Home extends Component {
     render() {
         return (
-            <Provider store={store}>
-                <div>
-                    <Navigation />
-                    <Mosaic columns={6} />
+            <div>
+                <div className="panel">
+                    <div className="panel-content">
+                        <div className="name">
+                            <h1 className="text-light">JP Candelier</h1>
+                            <h2>Photography</h2>
+                        </div>
+                        <div className="links">
+                            <Link to={`/${constants.CATEGORY_TRAVEL}`}>Travel</Link>
+                            &bull;
+                            <Link to={`/${constants.CATEGORY_BANDS}`}>Bands</Link>
+                            &bull;
+                            <Link to={`/${constants.CATEGORY_LIFE}`}>Life</Link>
+                        </div>
+                        <img src="/img/logo.svg" className="logo" role="presentation" />
+                    </div>
                 </div>
-            </Provider>
+
+                <div className="thumbs">
+                    {
+                        this.props.photos.map((photo, index) => (
+                            <Thumb photo={photo} onClick={() => null} key={index} />
+                        ))
+                    }
+                </div>
+            </div>
         );
     }
 }
+
+HomeComponent.propTypes = {
+    selectCategory: PropTypes.func,
+    photos: PropTypes.array
+};
+
+const mapStateToProps = ({ photos }) => ({ photos });
+
+const Home = connect(
+  mapStateToProps,
+  actions
+)(HomeComponent);
+
+export default Home;

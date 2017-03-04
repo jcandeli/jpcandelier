@@ -41,6 +41,7 @@ export class MosaicComponent extends Component {
                     photo={photo}
                     onClick={() => selectPhoto(index)}
                     selected={(currentIndex === index)}
+                    key={index}
                 />
             );
 

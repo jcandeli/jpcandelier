@@ -33,7 +33,7 @@ export const actions = {
 };
 
 export const defaultState = {
-    photos: photoDB,
+    photos: [],
     selectedCategory: constants.CATEGORY_HOME,
     expandedRow: 0,
     currentIndex: -1
@@ -42,7 +42,9 @@ export const defaultState = {
 export default function reducer(state = defaultState, action = {}) {
     switch (action.type) {
     case constants.SELECT_CATEGORY: {
-        const newPhotos = photoDB.filter((photo) => photo.category === action.category);
+        const newPhotos = (action.category === constants.CATEGORY_HOME)
+            ? photoDB.filter((photo) => photo.home)
+            : photoDB.filter((photo) => photo.category === action.category);
         return { ...state, photos: newPhotos, selectedCategory: action.category, currentIndex: -1 };
     }
     case constants.SELECT_PHOTO:

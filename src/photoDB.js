@@ -4,7 +4,8 @@ export default [
         category: 'travel',
         title: 'Hermosa Beach',
         location: 'Hermosa Beach, CA',
-        camera: 'Diana Camera'
+        camera: 'Diana Camera',
+        home: true
     },
 
     {
@@ -12,7 +13,8 @@ export default [
         category: 'travel',
         title: 'White temple',
         location: 'Chiang Rai, Thailand',
-        camera: 'Diana Camera'
+        camera: 'Diana Camera',
+        home: true
     },
 
     {
@@ -20,7 +22,8 @@ export default [
         category: 'travel',
         title: 'Astronomy park',
         location: 'Jaipur, India',
-        camera: 'Olympus XA'
+        camera: 'Olympus XA',
+        home: true
     },
 
     {
@@ -52,7 +55,8 @@ export default [
         category: 'travel',
         title: 'untitled',
         location: 'India',
-        camera: 'Olympus XA'
+        camera: 'Olympus XA',
+        home: true
     },
 
     {
@@ -60,7 +64,8 @@ export default [
         category: 'travel',
         title: 'Doi Suthep',
         location: 'Chiang Mai, Thailand',
-        camera: 'Diana Camera'
+        camera: 'Diana Camera',
+        home: true
     },
 
     {
@@ -68,7 +73,8 @@ export default [
         category: 'travel',
         title: '',
         location: 'Chiang Mai, Thailand',
-        camera: 'Diana Camera'
+        camera: 'Diana Camera',
+        home: true
     },
 
     {
@@ -76,7 +82,8 @@ export default [
         category: 'travel',
         title: 'Stupa',
         location: 'Mae Hong Son, Thailand',
-        camera: 'Diana Camera'
+        camera: 'Diana Camera',
+        home: true
     },
 
     {
@@ -92,7 +99,8 @@ export default [
         category: 'travel',
         title: 'Pallam Slum',
         location: 'Chennai, India',
-        camera: 'Nikon D90'
+        camera: 'Nikon D90',
+        home: true
     },
 
     {
@@ -116,7 +124,8 @@ export default [
         category: 'travel',
         title: 'orphans',
         location: 'Pamuru, India',
-        camera: 'Nikon D90'
+        camera: 'Nikon D90',
+        home: true
     },
 
     {
@@ -124,7 +133,8 @@ export default [
         category: 'travel',
         title: 'blind musician',
         location: 'Bangkok, Thailand',
-        camera: 'Nikon D70'
+        camera: 'Nikon D70',
+        home: true
     },
 
     {
@@ -140,7 +150,8 @@ export default [
         category: 'travel',
         title: 'Novice',
         location: 'Burma',
-        camera: 'Kiev 60 TTL'
+        camera: 'Kiev 60 TTL',
+        home: true
     },
 
     {
@@ -172,7 +183,8 @@ export default [
         category: 'travel',
         title: 'untitled',
         location: 'La Vega, Dominican Republic',
-        camera: 'Holga'
+        camera: 'Holga',
+        home: true
     },
 
     {
@@ -204,7 +216,8 @@ export default [
         category: 'travel',
         title: 'school kids',
         location: 'Burma',
-        camera: 'Kiev 60 TTL'
+        camera: 'Kiev 60 TTL',
+        home: true
     },
 
     {
@@ -228,7 +241,8 @@ export default [
         category: 'travel',
         title: 'untitled',
         location: 'Hawaii',
-        camera: 'Kiev 60 TTL'
+        camera: 'Kiev 60 TTL',
+        home: true
     },
 
     {
@@ -244,7 +258,8 @@ export default [
         category: 'travel',
         title: 'Pallam Slum',
         location: 'Chennai, India',
-        camera: 'Nikon D90'
+        camera: 'Nikon D90',
+        home: true
     },
 
     {
@@ -252,7 +267,8 @@ export default [
         category: 'travel',
         title: 'Wat Umong',
         location: 'Chiang Mai, Thailand',
-        camera: 'Nikon D70'
+        camera: 'Nikon D70',
+        home: true
     },
 
     {
@@ -260,7 +276,8 @@ export default [
         category: 'travel',
         title: 'Pai bus',
         location: 'Pai, Thailand',
-        camera: 'Nikon D70'
+        camera: 'Nikon D70',
+        home: true
     },
 
     {
@@ -451,7 +468,8 @@ export default [
         category: 'life',
         title: 'Sue',
         location: 'Redondo Beach, CA',
-        camera: 'Nikon D90'
+        camera: 'Nikon D90',
+        home: true
     },
     {
         image: 'ariel.jpg',
@@ -476,7 +494,8 @@ export default [
         image: '66647806_d42b761c02.jpg',
         category: 'life',
         title: 'untitled',
-        camera: 'fujica'
+        camera: 'fujica',
+        home: true
     },
     {
         image: '3613778427_38b14696eb.jpg',
@@ -612,7 +631,8 @@ export default [
         category: 'life',
         title: 'Dori',
         location: 'Burlington, VT',
-        camera: 'Kiev 60 TTL'
+        camera: 'Kiev 60 TTL',
+        home: true
     },
     {
         image: '2535847919_c6285982f9.jpg',
@@ -633,7 +653,8 @@ export default [
         category: 'life',
         title: 'Untitled',
         location: 'Burlington, VT',
-        camera: 'Holga'
+        camera: 'Holga',
+        home: true
     },
     {
         image: '396507528_515728ea15.jpg',
@@ -819,7 +840,8 @@ export default [
         image: '3449012140_ebfbc1a8dc.jpg',
         category: 'bands',
         title: 'Myra Flynn',
-        camera: 'kiev 60 ttl'
+        camera: 'kiev 60 ttl',
+        home: true
     },
     {
         image: '3044484361_d512b64872.jpg',
@@ -837,7 +859,8 @@ export default [
         image: '2822541479_7db85490b0.jpg',
         category: 'bands',
         title: 'Hunter and Casey',
-        camera: 'Holga'
+        camera: 'Holga',
+        home: true
     },
     {
         image: '2757839475_dfa08e78c3.jpg',
@@ -855,7 +878,8 @@ export default [
         image: '2823394770_97dac5ec78.jpg',
         category: 'bands',
         title: 'Casey, Hunter, Fereale',
-        camera: 'kiev 60 ttl'
+        camera: 'kiev 60 ttl',
+        home: true
     },
     {
         image: '1203738708_b3d84386af.jpg',
