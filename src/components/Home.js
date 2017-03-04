@@ -18,6 +18,7 @@ export class HomeComponent extends Component {
                             <h1 className="text-light">JP Candelier</h1>
                             <h2>Photography</h2>
                         </div>
+
                         <div className="links">
                             <Link to={`/${constants.CATEGORY_TRAVEL}`}>Travel</Link>
                             &bull;
@@ -25,6 +26,7 @@ export class HomeComponent extends Component {
                             &bull;
                             <Link to={`/${constants.CATEGORY_LIFE}`}>Life</Link>
                         </div>
+
                         <img src="/img/logo.svg" className="logo" role="presentation" />
                     </div>
                 </div>
