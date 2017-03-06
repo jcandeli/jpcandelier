@@ -6,7 +6,7 @@ import Thumb from './Thumb';
 
 export class HomeComponent extends Component {
     componentWillMount() {
-        this.props.selectCategory(constants.CATEGORY_TRAVEL);
+        this.props.selectCategory(constants.CATEGORY_HOME);
     }
 
     render() {
@@ -20,11 +20,17 @@ export class HomeComponent extends Component {
                         </div>
 
                         <div className="links">
-                            <Link to={`/${constants.CATEGORY_TRAVEL}`}>Travel</Link>
+                            <Link to={`/${constants.CATEGORY_TRAVEL}`}>
+                                <span className="spaced">Trave</span>l
+                            </Link>
                             &bull;
-                            <Link to={`/${constants.CATEGORY_BANDS}`}>Bands</Link>
+                            <Link to={`/${constants.CATEGORY_BANDS}`}>
+                                <span className="spaced">Band</span>s
+                            </Link>
                             &bull;
-                            <Link to={`/${constants.CATEGORY_LIFE}`}>Life</Link>
+                            <Link to={`/${constants.CATEGORY_LIFE}`}>
+                                <span className="spaced">Lif</span>e
+                            </Link>
                         </div>
 
                         <img src="/img/logo.svg" className="logo" role="presentation" />

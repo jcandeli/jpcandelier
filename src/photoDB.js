@@ -204,14 +204,6 @@ export default [
     },
 
     {
-        image: '4034712884_2b5c748e0b.jpg',
-        category: 'travel',
-        title: 'Diwali',
-        location: 'Nellore, India',
-        camera: 'Nikon D90'
-    },
-
-    {
         image: '3328487560_0e6a9d531b.jpg',
         category: 'travel',
         title: 'school kids',
@@ -229,28 +221,12 @@ export default [
     },
 
     {
-        image: '3608561574_5cc8881de9.jpg',
-        category: 'travel',
-        title: 'Elephant Camp',
-        location: 'Chiang Mai, Thailand',
-        camera: 'Diana Camera'
-    },
-
-    {
         image: '2419658284_e6be1581cd.jpg',
         category: 'travel',
         title: 'untitled',
         location: 'Hawaii',
         camera: 'Kiev 60 TTL',
         home: true
-    },
-
-    {
-        image: '1920682681_a62e6927ab.jpg',
-        category: 'travel',
-        title: 'untitled',
-        location: 'Montreal, Canada',
-        camera: 'Holga'
     },
 
     {
@@ -297,27 +273,11 @@ export default [
     },
 
     {
-        image: '3370521053_ee7a0a93c9.jpg',
-        category: 'travel',
-        title: 'Elephant Nature Park',
-        location: 'Chiang Mai, Thailand',
-        camera: 'Diana Camera'
-    },
-
-    {
         image: '440763413_7eb777fa49.jpg',
         category: 'travel',
         title: 'untitled',
         location: 'Pai, Thailand',
         camera: 'Nikon D70'
-    },
-
-    {
-        image: '4548231512_e127409314.jpg',
-        category: 'travel',
-        title: 'Taj Mahal',
-        location: 'Agra, India',
-        camera: 'Diana Camera'
     },
 
     {
@@ -353,14 +313,6 @@ export default [
     },
 
     {
-        image: '4729334736_c7d3b30a5e_z.jpg',
-        category: 'travel',
-        title: 'untitled',
-        location: 'Agra, India',
-        camera: 'Diana Camera'
-    },
-
-    {
         image: '4476708126_19dc3446e3.jpg',
         category: 'travel',
         title: 'Taj Mahal',
@@ -389,14 +341,6 @@ export default [
         category: 'travel',
         title: 'Pallam Slum',
         location: 'Chennai, India',
-        camera: 'Nikon D90'
-    },
-
-    {
-        image: '3949979277_480d14fe93.jpg',
-        category: 'travel',
-        title: 'untitled',
-        location: 'Kanigiri, India',
         camera: 'Nikon D90'
     },
 
@@ -441,14 +385,6 @@ export default [
     },
 
     {
-        image: '4484067453_91760eda14.jpg',
-        category: 'travel',
-        title: 'Taj',
-        location: 'Agra, India',
-        camera: 'Diana Camera'
-    },
-
-    {
         image: '76020001.jpg',
         category: 'travel',
         title: 'airport',
@@ -463,6 +399,67 @@ export default [
         location: 'New York City',
         camera: 'Holga'
     },
+    {
+        image: '22714320464_2147618cff_b.jpg',
+        category: 'travel',
+        title: '',
+        camera: 'Nikon D90'
+    },
+    {
+        image: '23143393599_51e4319264_b.jpg',
+        category: 'travel',
+        title: '',
+        camera: 'Nikon D90'
+    },
+    {
+        image: '23229339384_b184c5b0d0_b.jpg',
+        category: 'travel',
+        title: '',
+        camera: 'Nikon D90'
+    },
+    {
+        image: '23446229681_fcfcb9d7d3_b.jpg',
+        category: 'life',
+        title: '',
+        camera: 'Nikon D90'
+    },
+    {
+        image: '23528678495_acf0d1ab40_b.jpg',
+        category: 'travel',
+        title: '',
+        camera: 'Nikon D90'
+    },
+    {
+        image: '23535846656_48036a1eb3_b.jpg',
+        category: 'life',
+        title: '',
+        camera: 'Nikon D90'
+    },
+    {
+        image: '23572962765_aa4ae692b9_b.jpg',
+        category: 'travel',
+        title: '',
+        camera: 'Nikon D90'
+    },
+    {
+        image: '23651655586_7736e9c688_b.jpg',
+        category: 'travel',
+        title: '',
+        camera: 'Nikon D90'
+    },
+    {
+        image: '23677757865_4cf39c45a4_b.jpg',
+        category: 'life',
+        title: '',
+        camera: 'Nikon D90'
+    },
+    {
+        image: '23850487005_2f01363c08_b.jpg',
+        category: 'travel',
+        title: '',
+        camera: 'Nikon D90'
+    },
+
     {
         image: '7730432316_f728bbff58_b.jpg',
         category: 'life',
@@ -519,13 +516,6 @@ export default [
         camera: 'Polaroid One Step'
     },
     {
-        image: '4574430625_49d5120f46.jpg',
-        category: 'life',
-        title: 'Meghan',
-        location: 'India',
-        camera: 'Olympus XA'
-    },
-    {
         image: '182444495_f8da423932.jpg',
         category: 'life',
         title: 'Nedia',
@@ -539,13 +529,6 @@ export default [
         camera: 'Kiev 60 TTL'
     },
     {
-        image: '3859062080_2caeef20b2.jpg',
-        category: 'life',
-        title: 'Poda Island',
-        location: 'Krabi, Thailand',
-        camera: 'Diana Camera'
-    },
-    {
         image: '126395875_cabadfece2.jpg',
         category: 'life',
         title: 'double',
@@ -556,13 +539,6 @@ export default [
         category: 'life',
         title: 'parks',
         camera: 'Illford Sporti'
-    },
-    {
-        image: '135890415_85520ce6a9.jpg',
-        category: 'life',
-        title: 'Lake Champlain',
-        location: 'Burlington, VT',
-        camera: 'Polaroid SX-70'
     },
     {
         image: '2658683117_017178d444.jpg',
@@ -606,20 +582,6 @@ export default [
         camera: 'Kiev 60 TTL'
     },
     {
-        image: '2908270356_0552f721ed.jpg',
-        category: 'life',
-        title: 'untitled',
-        location: 'Bethel, VT',
-        camera: 'Polaroid Land Camera'
-    },
-    {
-        image: '2166289684_a113859e0d.jpg',
-        category: 'life',
-        title: 'untitled',
-        location: 'Bethel, VT',
-        camera: 'Kiev 60 TTL'
-    },
-    {
         image: '2659510934_009b7f5e1d_m.jpg',
         category: 'life',
         title: 'Lake Champlain',
@@ -635,26 +597,11 @@ export default [
         home: true
     },
     {
-        image: '2535847919_c6285982f9.jpg',
-        category: 'life',
-        title: '',
-        location: 'Burlington, VT',
-        camera: 'Polaroid SX-70'
-    },
-    {
         image: '337324533_88dba585cd.jpg',
         category: 'life',
         title: 'Grandpa',
         location: 'Dominica Republic',
         camera: 'Nikon D70'
-    },
-    {
-        image: '836726551_304146b4a1.jpg',
-        category: 'life',
-        title: 'Untitled',
-        location: 'Burlington, VT',
-        camera: 'Holga',
-        home: true
     },
     {
         image: '396507528_515728ea15.jpg',
@@ -677,32 +624,11 @@ export default [
         camera: 'Kiev 60 TTL'
     },
     {
-        image: '4303479028_c78b54a1f4.jpg',
-        category: 'life',
-        title: 'Pink',
-        location: 'Pondicherry, India',
-        camera: 'Nikon D90'
-    },
-    {
         image: '2739689912_b0eba4f772.jpg',
         category: 'life',
         title: 'Izi',
         location: 'Bethel, VT',
         camera: 'Yashica Electro'
-    },
-    {
-        image: '3968098509_8a09497265.jpg',
-        category: 'life',
-        title: 'Raj Palace',
-        location: 'Tanjore, India',
-        camera: 'Nikon D90'
-    },
-    {
-        image: '2546358354_d17103e00b.jpg',
-        category: 'life',
-        title: 'Birthday Girl',
-        location: 'Burlington, VT',
-        camera: 'Kiev 60 TTL'
     },
     {
         image: 'myra-hollywood2.jpg',
@@ -739,12 +665,6 @@ export default [
         category: 'bands',
         title: 'Myra Flynn',
         camera: 'Nikon D90'
-    },
-    {
-        image: '3511089694_8943a1c5c5.jpg',
-        category: 'bands',
-        title: 'Rubblebucket',
-        camera: 'Diana Camera'
     },
     {
         image: '3615025780_1f07149177.jpg',
@@ -786,12 +706,6 @@ export default [
         image: '3027059007_460ffe6eaa.jpg',
         category: 'bands',
         title: 'Myra Flynn',
-        camera: 'Nikon D70'
-    },
-    {
-        image: '2045017252_851372105c.jpg',
-        category: 'bands',
-        title: 'Waiting for a Miracle',
         camera: 'Nikon D70'
     },
     {
@@ -853,14 +767,14 @@ export default [
         image: '4109568218_7659fd5ca8.jpg',
         category: 'bands',
         title: 'Hunter and Fereale',
-        camera: 'Holga'
+        camera: 'Holga',
+        home: true
     },
     {
         image: '2822541479_7db85490b0.jpg',
         category: 'bands',
         title: 'Hunter and Casey',
-        camera: 'Holga',
-        home: true
+        camera: 'Holga'
     },
     {
         image: '2757839475_dfa08e78c3.jpg',
@@ -878,8 +792,7 @@ export default [
         image: '2823394770_97dac5ec78.jpg',
         category: 'bands',
         title: 'Casey, Hunter, Fereale',
-        camera: 'kiev 60 ttl',
-        home: true
+        camera: 'kiev 60 ttl'
     },
     {
         image: '1203738708_b3d84386af.jpg',
@@ -897,18 +810,90 @@ export default [
         image: '3544245534_5169922df9.jpg',
         category: 'bands',
         title: 'Rubblebucket',
-        camera: 'Kiev 60 TTL'
-    },
-    {
-        image: '1468628386_c835e15bd3.jpg',
-        category: 'bands',
-        title: 'Rubblebucket',
-        camera: 'Nikon D70'
+        camera: 'Kiev 60 TTL',
+        home: true
     },
     {
         image: '470610998_80a971a6a3.jpg',
         category: 'bands',
         title: 'Lamine Toure',
         camera: 'Nikon D70'
+    },
+    {
+        image: '15164906844_497af985ae_b.jpg',
+        category: 'travel',
+        title: 'Long Boat',
+        location: 'Krabi, Thailand',
+        camera: 'Nikon D70'
+    },
+    {
+        image: '15165408233_d52c42a899_b.jpg',
+        category: 'travel',
+        title: 'Lagoon',
+        location: 'Krabi, Thailand',
+        camera: 'Nikon D70'
+    },
+    {
+        image: '15721161351_dbe5317e78_b.jpg',
+        category: 'travel',
+        title: 'Chant',
+        location: 'Chiang Mai, Thailand',
+        camera: 'Nikon D70'
+    },
+    {
+        image: '21690026690_84dc234954_b.jpg',
+        category: 'bands',
+        title: 'Pluto',
+        location: 'Los Angeles, CA',
+        camera: 'Nikon D90'
+    },
+    {
+        image: '21690245648_56222bc68b_b.jpg',
+        category: 'bands',
+        title: 'The Pham Entertainment Artists',
+        location: 'Los Angeles, CA',
+        camera: 'Nikon D90'
+    },
+    {
+        image: '22884236393_a3b5082c63_b.jpg',
+        category: 'travel',
+        title: 'Tomb',
+        location: 'Hue',
+        camera: 'Nikon D90'
+    },
+    {
+        image: '23174359980_6d339d21fa_b.jpg',
+        category: 'life',
+        title: 'Tan',
+        location: 'Hue, Vietnam',
+        camera: 'Nikon D90'
+    },
+    {
+        image: '23485278196_e958a40836_b.jpg',
+        category: 'travel',
+        title: 'Tomb',
+        location: 'Hue, Vietnam',
+        camera: 'Nikon D90'
+    },
+    {
+        image: '24850613076_f51a6f30a1_b.jpg',
+        category: 'bands',
+        title: 'Justin Levinson',
+        location: 'Los Angeles, CA',
+        camera: 'Nikon D90'
+    },
+    {
+        image: '7445909362_402f2f94d4_b.jpg',
+        category: 'bands',
+        title: 'Barika',
+        location: 'Burlington, VT',
+        camera: 'Nikon D70'
+    },
+    {
+        image: '5979477880_0b1c6b972f_b.jpg',
+        category: 'life',
+        title: 'claw tooth tub',
+        location: 'Burlington, VT',
+        camera: 'Polaroid sx-70'
     }
 ];
