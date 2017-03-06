@@ -18,7 +18,7 @@ export default [
     },
 
     {
-        image: '4571721717_bb4f9da01a.jpg',
+        image: '4571721717_bb4f9da01a_b.jpg',
         category: 'travel',
         title: 'Astronomy park',
         location: 'Jaipur, India',
@@ -51,7 +51,7 @@ export default [
     },
 
     {
-        image: '4619264427_62b8a23c57.jpg',
+        image: '4619264427_62b8a23c57_b.jpg',
         category: 'travel',
         title: 'untitled',
         location: 'India',
@@ -95,7 +95,7 @@ export default [
     },
 
     {
-        image: '4405365546_e1002b5010.jpg',
+        image: '4405365546_e1002b5010_b.jpg',
         category: 'travel',
         title: 'Pallam Slum',
         location: 'Chennai, India',
@@ -120,7 +120,7 @@ export default [
     },
 
     {
-        image: '4126993858_c1373fd1d3.jpg',
+        image: '4126993858_c1373fd1d3_b.jpg',
         category: 'travel',
         title: 'orphans',
         location: 'Pamuru, India',
@@ -129,7 +129,7 @@ export default [
     },
 
     {
-        image: '422072087_22ea7f952a.jpg',
+        image: '422072087_22ea7f952a_b.jpg',
         category: 'travel',
         title: 'blind musician',
         location: 'Bangkok, Thailand',
@@ -230,7 +230,7 @@ export default [
     },
 
     {
-        image: '4364031123_ba885c6583.jpg',
+        image: '4364031123_ba885c6583_b.jpg',
         category: 'travel',
         title: 'Pallam Slum',
         location: 'Chennai, India',
@@ -239,7 +239,7 @@ export default [
     },
 
     {
-        image: '440709028_3f7682b065.jpg',
+        image: '440709028_3f7682b065_b.jpg',
         category: 'travel',
         title: 'Wat Umong',
         location: 'Chiang Mai, Thailand',
@@ -248,7 +248,7 @@ export default [
     },
 
     {
-        image: '425235929_45bb321eb5.jpg',
+        image: '425235929_45bb321eb5_b.jpg',
         category: 'travel',
         title: 'Pai bus',
         location: 'Pai, Thailand',
@@ -265,7 +265,7 @@ export default [
     },
 
     {
-        image: '443921662_2797bdaf3b.jpg',
+        image: '443921662_2797bdaf3b_b.jpg',
         category: 'travel',
         title: 'Wat Bang Phra',
         location: 'Thailand',
@@ -273,7 +273,7 @@ export default [
     },
 
     {
-        image: '440763413_7eb777fa49.jpg',
+        image: '440763413_7eb777fa49_b.jpg',
         category: 'travel',
         title: 'untitled',
         location: 'Pai, Thailand',
@@ -289,7 +289,7 @@ export default [
     },
 
     {
-        image: '3939559689_5c6c64b1d2.jpg',
+        image: '3939559689_5c6c64b1d2_b.jpg',
         category: 'travel',
         title: 'untitled',
         location: 'Pamaru, India',
@@ -323,7 +323,7 @@ export default [
     },
 
     {
-        image: '4404601193_97c960bd8a.jpg',
+        image: '4404601193_97c960bd8a_b.jpg',
         category: 'travel',
         title: 'Pallam Slum',
         location: 'Chennai, India',
@@ -331,7 +331,7 @@ export default [
     },
 
     {
-        image: '4421461212_949dd7a319.jpg',
+        image: '4421461212_949dd7a319_b.jpg',
         category: 'travel',
         title: 'Pallam Slum',
         location: 'Chennai, India',
@@ -339,7 +339,7 @@ export default [
     },
 
     {
-        image: '4424010548_abe67087f6.jpg',
+        image: '4424010548_abe67087f6_b.jpg',
         category: 'travel',
         title: 'Pallam Slum',
         location: 'Chennai, India',
@@ -347,7 +347,7 @@ export default [
     },
 
     {
-        image: '4042770370_d656541c2f.jpg',
+        image: '4042770370_d656541c2f_b.jpg',
         category: 'travel',
         title: 'orphans',
         location: 'Duttalur , India',
@@ -355,7 +355,7 @@ export default [
     },
 
     {
-        image: '4146415374_3f44f9a6d6.jpg',
+        image: '4146415374_3f44f9a6d6_b.jpg',
         category: 'travel',
         title: 'orphan',
         location: 'Pamuru, India',
@@ -363,7 +363,7 @@ export default [
     },
 
     {
-        image: '3967851971_88ca9b33d2.jpg',
+        image: '3967851971_88ca9b33d2_b.jpg',
         category: 'travel',
         title: 'bus ride',
         location: 'Tanjore, India',
@@ -371,7 +371,7 @@ export default [
     },
 
     {
-        image: '4421462536_64bd9a7a7e.jpg',
+        image: '4421462536_64bd9a7a7e_b.jpg',
         category: 'travel',
         title: 'Pallam Slum',
         location: 'Chennai, India',
@@ -379,7 +379,7 @@ export default [
     },
 
     {
-        image: '496392023_7881ef7127.jpg',
+        image: '496392023_7881ef7127_b.jpg',
         category: 'travel',
         title: 'canal',
         location: 'Bangkok, Thailand',
