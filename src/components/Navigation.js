@@ -6,13 +6,25 @@ import { actions, constants } from '../redux/photos';
 export class NavigationComponent extends Component {
     render() {
         return (
-            <nav className="main-nav">
+            <nav className="main-nav bg-light padded">
                 <Link to="/"><img src="/img/logo.svg" className="logo" alt="logo" /></Link>
-                <span className="text-light">JP Candelier</span>
-                <span className="bold">Photography</span>
-                <Link to={`/${constants.CATEGORY_TRAVEL}`}>Travel</Link>
-                <Link to={`/${constants.CATEGORY_BANDS}`}>Bands</Link>
-                <Link to={`/${constants.CATEGORY_LIFE}`}>Life</Link>
+
+                <div className="name inline-block text-middle">
+                    <span className="text-light">JP Candelier</span>
+                    <span className="text-bold margined-sm-left">Photography</span>
+                </div>
+
+                <div className="nav-links float-right text-lg">
+                    <Link to={`/${constants.CATEGORY_TRAVEL}`} activeClassName="selected">
+                        Travel
+                    </Link>
+                    <Link to={`/${constants.CATEGORY_BANDS}`} activeClassName="selected">
+                        Bands
+                    </Link>
+                    <Link to={`/${constants.CATEGORY_LIFE}`} activeClassName="selected">
+                        Life
+                    </Link>
+                </div>
             </nav>
         );
     }

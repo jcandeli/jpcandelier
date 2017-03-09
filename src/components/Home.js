@@ -12,7 +12,7 @@ export class HomeComponent extends Component {
     render() {
         return (
             <div>
-                <div className="panel">
+                <div className="panel bg-light text-centered absolute">
                     <div className="panel-content">
                         <div className="name">
                             <h1 className="text-light">JP Candelier</h1>
@@ -21,15 +21,15 @@ export class HomeComponent extends Component {
 
                         <div className="links">
                             <Link to={`/${constants.CATEGORY_TRAVEL}`}>
-                                <span className="spaced">Trave</span>l
+                                Travel
                             </Link>
                             &bull;
                             <Link to={`/${constants.CATEGORY_BANDS}`}>
-                                <span className="spaced">Band</span>s
+                                Bands
                             </Link>
                             &bull;
                             <Link to={`/${constants.CATEGORY_LIFE}`}>
-                                <span className="spaced">Lif</span>e
+                                Life
                             </Link>
                         </div>
 

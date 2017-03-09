@@ -4,7 +4,7 @@ import cx from 'classnames';
 export default class Thumb extends Component {
     render() {
         const { photo, onClick, selected } = this.props;
-        const classNames = cx('thumb', { selected });
+        const classNames = cx('thumb', 'pointer', { selected });
         return (
             <div
                 key={photo.image}

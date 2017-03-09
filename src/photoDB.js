@@ -71,7 +71,7 @@ export default [
     {
         image: '3269066068_0d308a7f1a_b.jpg',
         category: 'travel',
-        title: '',
+        title: 'Untitled',
         location: 'Chiang Mai, Thailand',
         camera: 'Diana Camera',
         home: true
@@ -404,63 +404,63 @@ export default [
     {
         image: '22714320464_2147618cff_b.jpg',
         category: 'travel',
-        title: '',
+        title: 'Untitled',
         camera: 'Nikon D90'
     },
     {
         image: '23143393599_51e4319264_b.jpg',
         category: 'travel',
-        title: '',
+        title: 'Untitled',
         camera: 'Nikon D90'
     },
     {
         image: '23229339384_b184c5b0d0_b.jpg',
         category: 'travel',
-        title: '',
+        title: 'Untitled',
         camera: 'Nikon D90',
         home: true
     },
     {
         image: '23446229681_fcfcb9d7d3_b.jpg',
         category: 'life',
-        title: '',
+        title: 'Untitled',
         camera: 'Nikon D90',
         home: true
     },
     {
         image: '23528678495_acf0d1ab40_b.jpg',
         category: 'travel',
-        title: '',
+        title: 'Untitled',
         camera: 'Nikon D90'
     },
     {
         image: '23535846656_48036a1eb3_b.jpg',
         category: 'life',
-        title: '',
+        title: 'Untitled',
         camera: 'Nikon D90'
     },
     {
         image: '23572962765_aa4ae692b9_b.jpg',
         category: 'travel',
-        title: '',
+        title: 'Untitled',
         camera: 'Nikon D90'
     },
     {
         image: '23651655586_7736e9c688_b.jpg',
         category: 'travel',
-        title: '',
+        title: 'Untitled',
         camera: 'Nikon D90'
     },
     {
         image: '23677757865_4cf39c45a4_b.jpg',
         category: 'life',
-        title: '',
+        title: 'Untitled',
         camera: 'Nikon D90'
     },
     {
         image: '23850487005_2f01363c08_b.jpg',
         category: 'travel',
-        title: '',
+        title: 'Untitled',
         camera: 'Nikon D90',
         home: true
     },
@@ -703,7 +703,7 @@ export default [
     {
         image: '3658969256_6713ecac0e_b.jpg',
         category: 'bands',
-        title: '',
+        title: 'Untitled',
         camera: 'kiev 60 ttl'
     },
     {

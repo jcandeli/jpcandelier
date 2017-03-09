@@ -1,33 +1,137 @@
-$light-bg: #fbfbfb;
+$bg-light: #fbfbfb;
+$bg-dark: #e4e4e4;
 $txt-color: #383838;
+$txt-highlight: #50bdc3;
+$txt-lg: 36px;
+$base-margin: 10px;
+$base-padding: 10px;
+$directions: top, right, bottom, left;
 
-body {
-    background-color: $light-bg;
-    font-family: sans-serif;
+@mixin createDirectionalClasses ($baseClass, $property, $value) {
+    @each $direction in $directions {
+        .#{$baseClass}-#{$direction} {
+            #{$property}-#{$direction}: $value;
+        }
+    }
+
+    .#{$baseClass} {
+        @each $direction in $directions {
+            @extend .#{$baseClass}-#{$direction};
+        }
+    }
 }
 
-h1, h2, h3, h4, h5, .text-bold { 
-    font-family: 'Bebas-Neue'; 
+/* =====================
+    atomic classes 
+===================== */
+.bg-light {
+    background-color: $bg-light;
 }
+
+.bg-dark {
+    background-color: $bg-dark;
+}
+
+@include createDirectionalClasses(padded, padding, $base-padding);
+@include createDirectionalClasses(padded-lg, padding, $base-padding * 1.5);
+@include createDirectionalClasses(padded-sm, padding, $base-padding / 1.5);
+@include createDirectionalClasses(padded-none, padding, 0);
+
+@include createDirectionalClasses(margined, margin, $base-margin);
+@include createDirectionalClasses(margined-lg, margin, $base-margin * 1.5);
+@include createDirectionalClasses(margined-sm, margin, $base-margin / 1.5);
+@include createDirectionalClasses(margined-none, margin, 0);
 
 .text-light {
     font-family: 'Bebas-Neue-Light'; 
 }
 
-.panel {
-    color: $txt-color;
+.text-bold {
+    font-family: 'Bebas-Neue'; 
+}
+
+.text-lg {
+    font-size: $txt-lg;
+}
+
+.text-sm {
+    font-size: $txt-lg / 2;
+}
+
+.text-highlight {
+    color: $txt-highlight;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.text-middle {
+    vertical-align: middle;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.absolute {
     position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* =====================
+    base styling 
+===================== */
+body {
+    color: $txt-color;
+    @extend .margined-none;
+    @extend .bg-light;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5 { 
+    @extend .text-bold;
+    margin: 0;
+}
+
+a {
+    color: $txt-color;
+}
+
+p {
+    @extend .margined-sm-top;
+    @extend .margined-sm-bottom;
+}
+
+
+.panel {
     left: calc(50% - 345px);
     top: 8%;
-    background-color: $light-bg;
-    text-align: center;
 
     .panel-content {
         padding: 140px 55px;
     }
 
     h1, h2 {
-        margin: 0;
         font-size: 56px;
         line-height: 24px;
     }
@@ -38,11 +142,12 @@ h1, h2, h3, h4, h5, .text-bold {
     }
 
     h2 {
+        @extend .margined-none;
         letter-spacing: 1px;
     }
 
     .logo {
-        position: absolute;
+        @extend .absolute;
         left: calc(50% - 225px);
         top: calc(50% - 225px);
         height: 450px;
@@ -51,46 +156,44 @@ h1, h2, h3, h4, h5, .text-bold {
     }
 
     .links {
-        position: relative;
+        @extend .relative;
         z-index: 99;
         a {
-            color: $txt-color;
-            font-size: 36px;
+            @extend .text-light;
+            @extend .inline-block;
+            @extend .text-lg;
+            @extend .text-middle;
             text-decoration: none;
-            font-family: 'Bebas-Neue-Light';
-            display: inline-block;
             margin: 0 30px;
+            letter-spacing: 15px;
         }
 
         a:hover {
-            text-decoration: underline;
+            @extend .text-highlight;
         } 
     }
-}
 
-.spaced {
-    letter-spacing: 15px;
-}
-
-.name {
-    margin: 100px 0;
-    position: relative;
-    top: -30px;
+    .name {
+        @extend .relative;
+        margin: 100px 0;
+        top: -30px;
+    }
 }
 
 .thumbs {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 0.7%;
 }
 
 .thumb {
     width: 16%;
     padding-bottom: 16%;
     margin: 0.375% 0;
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &.selected {
         filter: blur(1px) grayscale(100%);
@@ -98,36 +201,59 @@ h1, h2, h3, h4, h5, .text-bold {
 }
 
 .image-panel {
-    padding: 20px;
-    width: calc(100% - 40px);
-    background-color: #e4e4e4;
+    position: relative;
     box-shadow: 0 0 10px #969696 inset;
+    padding: ($base-padding * 4) ($base-padding * 10);
 
-    h2 {
-        font-size: 36px;
+    .photo {
+        vertical-align: top;
+        max-height: 600px;
+        max-height: 80vh;
+        border: solid #fff 5px;
+    }
+
+    .previous, .next, .close {
+        @extend .pointer;
+        @extend .text-bold;
+        @extend .text-lg;
+        @extend .inline-block;
+    }
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @extend .padded-lg;
+    }
+
+    .image-panel-details {
+        font-size: 26px;
+        @extend .inline-block;
+        padding-left: $base-padding * 4;
     }
 }
 
 
 .main-nav {
-    height: 40px;
-    padding-bottom: 15px;
-    background-color: $light-bg;
-    font-size: 36px;
+    .name {
+        font-size: 32px;
+    }
 
     a {
-        color: $txt-color;
+        @extend .margined-left;
+        @extend .margined-right;
+        @extend .inline-block;
+        @extend .text-light;
         text-decoration: none;
-        font-family: 'Bebas-Neue-Light';
-        display: inline-block;
-        margin: 0 10px;
     }
 
     a.selected {
-        color: #50bdc3;
+        @extend .text-highlight;
     }
 
     .logo {
+        @extend .inline-block;
+        @extend .text-middle;
         max-height: 40px;
     }
 }

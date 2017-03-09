@@ -8,7 +8,7 @@ import { actions } from '../redux/photos';
 export class MosaicComponent extends Component {
     componentDidMount() {
         document.addEventListener('keydown', (e) => {
-            const { selectPhoto, deselectPhoto, currentIndex } = this.props;
+            const { selectPhoto, deselectPhoto, currentIndex, expandRow, columns } = this.props;
             if (e.keyCode === 39) {
                 // right arrow
                 selectPhoto(currentIndex + 1);
@@ -19,6 +19,7 @@ export class MosaicComponent extends Component {
                 // esc
                 deselectPhoto();
             }
+            expandRow(Math.floor((currentIndex + 1) / columns));
         });
     }
 
@@ -48,7 +49,7 @@ export class MosaicComponent extends Component {
             if (((index + 1) % columns) === 0) {
                 const rowIndex = Math.floor(index / columns);
                 rows.push(
-                    <div className="row" onClick={() => expandRow(rowIndex)}>
+                    <div onClick={() => expandRow(rowIndex)}>
                         <div className="thumbs">{row}</div>
                         {
                             (expandedRow === rowIndex && currentIndex >= 0)
