@@ -201,6 +201,8 @@ p {
 }
 
 .image-panel {
+    display: flex;
+    justify-content: center;
     position: relative;
     box-shadow: 0 0 10px #969696 inset;
     padding: ($base-padding * 4) ($base-padding * 10);
@@ -208,8 +210,10 @@ p {
     .photo {
         vertical-align: top;
         max-height: 600px;
-        max-height: 80vh;
+        max-height: 80vmin;
         border: solid #fff 5px;
+        margin-right: $base-padding * 4;
+        @extend .margined-lg-bottom;
     }
 
     .previous, .next, .close {
@@ -217,6 +221,13 @@ p {
         @extend .text-bold;
         @extend .text-lg;
         @extend .inline-block;
+        opacity: 0;
+    }
+
+    &:hover .previous,
+    &:hover .next,
+    &:hover .close {
+        opacity: 1;
     }
 
     .close {
@@ -226,10 +237,22 @@ p {
         @extend .padded-lg;
     }
 
+    .previous, .next {
+        position: absolute;
+        top: calc(50% - 85px);
+    }
+
+    .previous {
+        left: 20px;
+    }
+
+    .next {
+        right: 20px;
+    }
+
     .image-panel-details {
         font-size: 26px;
         @extend .inline-block;
-        padding-left: $base-padding * 4;
     }
 }
 

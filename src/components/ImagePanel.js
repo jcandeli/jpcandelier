@@ -9,7 +9,11 @@ export default class ImagePanel extends Component {
                     <img src="/img/prev.png" alt="previous button" />
                 </a>
 
-                <img src={`/img/${photo.category}/${photo.image}`} alt={photo.name} className="photo" />
+                <img
+                    src={`/img/${photo.category}/${photo.image}`}
+                    alt={photo.name}
+                    className="photo"
+                />
 
                 <div className="image-panel-details text-left">
                     <h2 className="text-lg">{photo.title}</h2>
