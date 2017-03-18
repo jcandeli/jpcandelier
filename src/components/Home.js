@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import { actions, constants } from '../redux/photos';
 import Thumb from './Thumb';
+import Footer from './Footer';
 
 export class HomeComponent extends Component {
     componentWillMount() {
@@ -44,6 +45,8 @@ export class HomeComponent extends Component {
                         ))
                     }
                 </div>
+
+                <Footer />
             </div>
         );
     }

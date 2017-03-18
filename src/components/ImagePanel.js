@@ -53,7 +53,7 @@ export default class ImagePanel extends Component {
 }
 
 ImagePanel.defaultProps = {
-    photo: null
+    photo: {}
 };
 
 ImagePanel.propTypes = {

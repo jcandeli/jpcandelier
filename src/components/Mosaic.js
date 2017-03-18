@@ -12,14 +12,15 @@ export class MosaicComponent extends Component {
             if (e.keyCode === 39) {
                 // right arrow
                 selectPhoto(currentIndex + 1);
+                expandRow(Math.floor((currentIndex + 1) / columns));
             } else if (e.keyCode === 37) {
                 // left arrow
                 selectPhoto(currentIndex - 1);
+                expandRow(Math.floor((currentIndex - 1) / columns));
             } else if (e.keyCode === 27) {
                 // esc
                 deselectPhoto();
             }
-            expandRow(Math.floor((currentIndex + 1) / columns));
         });
     }
 
@@ -49,7 +50,7 @@ export class MosaicComponent extends Component {
             if (((index + 1) % columns) === 0) {
                 const rowIndex = Math.floor(index / columns);
                 rows.push(
-                    <div onClick={() => expandRow(rowIndex)}>
+                    <div onClick={() => expandRow(rowIndex)} key={index} >
                         <div className="thumbs">{row}</div>
                         {
                             (expandedRow === rowIndex && currentIndex >= 0)
