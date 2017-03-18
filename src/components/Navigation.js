@@ -10,7 +10,7 @@ export class NavigationComponent extends Component {
                 <Link to="/"><img src="/img/logo.svg" className="logo" alt="logo" /></Link>
 
                 <div className="name inline-block text-middle">
-                    <span className="text-light">JP Candelier</span>
+                    <span className="text-light">Candelier</span>
                     <span className="text-bold margined-sm-left">Photography</span>
                 </div>
 
