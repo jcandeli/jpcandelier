@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Mosaic from './Mosaic';
 import Navigation from './Navigation';
+import Footer from './Footer';
 import { actions } from '../redux/photos';
 
 export class GalleryComponent extends Component {
@@ -18,6 +19,7 @@ export class GalleryComponent extends Component {
             <div>
                 <Navigation />
                 <Mosaic columns={6} />
+                <Footer />
             </div>
         );
     }
