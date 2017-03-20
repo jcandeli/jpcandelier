@@ -48,7 +48,7 @@ export default function reducer(state = defaultState, action = {}) {
         return { ...state, photos: newPhotos, selectedCategory: action.category, currentIndex: -1 };
     }
     case constants.SELECT_PHOTO:
-        return (action.index > 0 || action.index > state.photos.length)
+        return (action.index >= 0 || action.index > state.photos.length)
             ? { ...state, currentIndex: action.index }
             : state;
     case constants.DESELECT_PHOTO:
