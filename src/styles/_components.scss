@@ -1,0 +1,178 @@
+@import 'variables';
+
+.mosaic {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0.7%;
+}
+
+.thumb {
+    width: 16%;
+    padding-bottom: 16%;
+    margin: 0.375% 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+// .panel {
+//     left: calc(50% - 345px);
+//     top: 8%;
+
+//     .panel-content {
+//         padding: 140px 55px;
+//     }
+
+//     h1, h2 {
+//         font-size: 56px;
+//         line-height: 24px;
+//     }
+
+//     h1 {
+//         letter-spacing: 3px;
+//         margin-bottom: 15px;
+//     }
+
+//     h2 {
+//         @extend .margined-none;
+//         letter-spacing: 1px;
+//     }
+
+//     .logo {
+//         @extend .absolute;
+//         left: calc(50% - 225px);
+//         top: calc(50% - 225px);
+//         height: 450px;
+//         opacity: 0.07;
+//         z-index: 1;
+//     }
+
+//     .links {
+//         @extend .relative;
+//         z-index: 99;
+//         a {
+//             @extend .text-light;
+//             @extend .inline-block;
+//             @extend .text-lg;
+//             @extend .text-middle;
+//             text-decoration: none;
+//             margin: 0 30px;
+//             letter-spacing: 15px;
+//         }
+
+//         a:hover {
+//             @extend .text-highlight;
+//         } 
+//     }
+
+//     .name {
+//         @extend .relative;
+//         margin: 100px 0;
+//         top: -30px;
+//     }
+// }
+
+// .image-panel {
+//     display: flex;
+//     justify-content: center;
+//     position: relative;
+//     box-shadow: 0 0 10px #969696 inset;
+//     padding: ($base-padding * 4) ($base-padding * 10);
+
+//     .photo {
+//         vertical-align: top;
+//         max-height: 600px;
+//         max-height: 75vmin;
+//         border: solid #fff 5px;
+//         margin-right: $base-padding * 4;
+//         @extend .margined-lg-bottom;
+//     }
+
+//     .previous, .next, .close {
+//         @extend .pointer;
+//         @extend .text-bold;
+//         @extend .text-lg;
+//         @extend .inline-block;
+//         opacity: 0;
+//     }
+
+//     &:hover .previous,
+//     &:hover .next,
+//     &:hover .close {
+//         opacity: 1;
+//     }
+
+//     .close {
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         @extend .padded-lg;
+//     }
+
+//     .previous, .next {
+//         position: absolute;
+//         top: calc(50% - 85px);
+//     }
+
+//     .previous {
+//         left: 20px;
+//     }
+
+//     .next {
+//         right: 20px;
+//     }
+
+//     .image-panel-details {
+//         font-size: 26px;
+//         @extend .inline-block;
+//     }
+// }
+
+
+.main-nav {
+    .name {
+        font-size: 32px;
+    }
+
+    a {
+        @extend .margined-left;
+        @extend .margined-right;
+        @extend .inline-block;
+        @extend .text-light;
+        text-decoration: none;
+    }
+
+    a.selected {
+        @extend .text-highlight;
+    }
+
+    .logo {
+        @extend .inline-block;
+        @extend .text-middle;
+        max-height: 40px;
+    }
+}
+
+.github-logo {
+    @extend .padded-lg;
+    @extend .inline-block;
+}
+
+.email-icon, .github-logo {
+    vertical-align: middle;
+    width: 30px;
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.app {
+    transition: transform .2s ease-in-out;
+}
+
+.zoomed {
+    transform: scale(2) translate(400px, 400px);
+}

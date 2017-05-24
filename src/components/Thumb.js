@@ -7,9 +7,9 @@ export default class Thumb extends Component {
         const classNames = cx('thumb', 'pointer', { selected });
         return (
             <div
-                key={photo.image}
-                className={classNames}
+                alt={photo.caption}
                 style={{ backgroundImage: `url(/img/${photo.category}/${photo.image})` }}
+                className={classNames}
                 onClick={onClick}
             />
         );
