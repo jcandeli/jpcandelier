@@ -1,0 +1,76 @@
+@import 'variables';
+@import 'mixins';
+
+.bg-light {
+    background-color: $bg-light;
+}
+
+.bg-dark {
+    background-color: $bg-dark;
+}
+
+@include createDirectionalClasses(padded, padding, $base-padding);
+@include createDirectionalClasses(padded-lg, padding, $base-padding * 1.5);
+@include createDirectionalClasses(padded-sm, padding, $base-padding / 1.5);
+@include createDirectionalClasses(padded-none, padding, 0);
+
+@include createDirectionalClasses(margined, margin, $base-margin);
+@include createDirectionalClasses(margined-lg, margin, $base-margin * 1.5);
+@include createDirectionalClasses(margined-sm, margin, $base-margin / 1.5);
+@include createDirectionalClasses(margined-none, margin, 0);
+
+.text-light {
+    font-family: 'Bebas-Neue-Light'; 
+}
+
+.text-bold {
+    font-family: 'Bebas-Neue'; 
+}
+
+.text-lg {
+    font-size: $txt-lg;
+}
+
+.text-sm {
+    font-size: $txt-lg / 2;
+}
+
+.text-highlight {
+    color: $txt-highlight;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.text-middle {
+    vertical-align: middle;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.pointer {
+    cursor: pointer;
+}

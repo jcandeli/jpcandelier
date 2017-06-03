@@ -1,0 +1,13 @@
+@mixin createDirectionalClasses ($baseClass, $property, $value) {
+    @each $direction in $directions {
+        .#{$baseClass}-#{$direction} {
+            #{$property}-#{$direction}: $value;
+        }
+    }
+
+    .#{$baseClass} {
+        @each $direction in $directions {
+            @extend .#{$baseClass}-#{$direction};
+        }
+    }
+}
