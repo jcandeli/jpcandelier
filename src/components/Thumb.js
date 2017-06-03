@@ -9,7 +9,7 @@ export default class Thumb extends Component {
             <div
                 key={photo.image}
                 className={classNames}
-                style={{ backgroundImage: `url(/img/${photo.category}/${photo.image})` }}
+                style={{ backgroundImage: `url(/img/${photo.category}/thumbs/${photo.image})` }}
                 onClick={onClick}
             />
         );
