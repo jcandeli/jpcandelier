@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9bef6a482f01582be7e1"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "d01758e8e5eae493c235"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotMainModule = true; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -11607,7 +11607,7 @@ var Thumb = function (_Component) {
             return _react2.default.createElement('div', {
                 key: photo.image,
                 className: classNames,
-                style: { backgroundImage: 'url(/img/' + photo.category + '/' + photo.image + ')' },
+                style: { backgroundImage: 'url(/img/' + photo.category + '/thumbs/' + photo.image + ')' },
                 onClick: onClick
             });
         }

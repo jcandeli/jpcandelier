@@ -8,7 +8,7 @@ export default class Thumb extends Component {
         return (
             <div
                 alt={photo.caption}
-                style={{ backgroundImage: `url(/img/${photo.category}/${photo.image})` }}
+                style={{ backgroundImage: `url(/img/${photo.category}/thumbs/${photo.image})` }}
                 className={classNames}
                 onClick={onClick}
             />
