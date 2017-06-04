@@ -7,3 +7,5 @@ My personal website and portfolio site for http://jpcandelier.com
 * Webpack
 * ES6 (Babel)
 
+# To Do List:
+https://github.com/jcandeli/jpcandelier/issues
