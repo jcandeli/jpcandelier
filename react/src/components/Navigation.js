@@ -33,8 +33,8 @@ export class NavigationComponent extends Component {
 const mapStateToProps = ({ selectedCategory }) => ({ selectedCategory });
 
 const Navigation = connect(
-  mapStateToProps,
-  actions
+    mapStateToProps,
+    actions
 )(NavigationComponent);
 
 export default Navigation;

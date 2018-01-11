@@ -16,7 +16,7 @@ export default class Footer extends Component {
                 </div>
 
                 <div className="float-right">
-                    <a href="https://github.com/jcandeli/jpcandelier" target="_blank">
+                    <a href="https://github.com/jcandeli/jpcandelier" target="_blank" rel="noopener noreferrer">
                         <img
                             src="/img/github-logo.svg"
                             className="github-logo"

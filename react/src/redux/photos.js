@@ -4,11 +4,12 @@ export const constants = {
     SELECT_PHOTO: 'SELECT_PHOTO',
     DESELECT_PHOTO: 'DESELECT_PHOTO',
     SELECT_CATEGORY: 'SELECT_CATEGORY',
+    EXPAND_ROW: 'EXPAND_ROW',
+
     CATEGORY_HOME: 'home',
     CATEGORY_TRAVEL: 'travel',
     CATEGORY_BANDS: 'bands',
-    CATEGORY_LIFE: 'life',
-    EXPAND_ROW: 'EXPAND_ROW'
+    CATEGORY_LIFE: 'life'
 };
 
 export const actions = {
@@ -39,6 +40,12 @@ export const defaultState = {
     currentIndex: -1
 };
 
+/**
+ * redux reducer function
+ * @param   {object} state current redux state
+ * @param   {object} action dispatched action
+ * @returns {object} state
+ **/
 export default function reducer(state = defaultState, action = {}) {
     switch (action.type) {
     case constants.SELECT_CATEGORY: {

@@ -4,13 +4,14 @@ import cx from 'classnames';
 export default class Thumb extends Component {
     render() {
         const { photo, onClick, selected } = this.props;
-        const classNames = cx('thumb', 'pointer', { selected });
         return (
             <div
                 key={photo.image}
-                className={classNames}
+                className={cx('thumb', 'pointer', { selected })}
                 style={{ backgroundImage: `url(/img/${photo.category}/thumbs/${photo.image})` }}
                 onClick={onClick}
+                role="img"
+                aria-label={photo.tite}
             />
         );
     }
@@ -18,10 +19,11 @@ export default class Thumb extends Component {
 
 Thumb.propTypes = {
     photo: PropTypes.object.isRequired,
-    onClick: PropTypes.func.isRequired,
+    onClick: PropTypes.func,
     selected: PropTypes.bool
 };
 
 Thumb.defaultProps = {
-    selected: false
+    selected: false,
+    onClick: () => {}
 };

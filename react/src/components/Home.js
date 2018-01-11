@@ -34,14 +34,14 @@ export class HomeComponent extends Component {
                             </Link>
                         </div>
 
-                        <img src="/img/logo.svg" className="logo" role="presentation" />
+                        <img src="/img/logo.svg" className="logo" alt="logo" />
                     </div>
                 </div>
 
                 <div className="thumbs">
                     {
-                        this.props.photos.map((photo, index) => (
-                            <Thumb photo={photo} onClick={() => null} key={index} />
+                        this.props.photos.map((photo) => (
+                            <Thumb photo={photo} key={photo.image} />
                         ))
                     }
                 </div>
@@ -57,11 +57,16 @@ HomeComponent.propTypes = {
     photos: PropTypes.array
 };
 
+HomeComponent.defaultProps = {
+    selectCategory: () => {},
+    photos: []
+};
+
 const mapStateToProps = ({ photos }) => ({ photos });
 
 const Home = connect(
-  mapStateToProps,
-  actions
+    mapStateToProps,
+    actions
 )(HomeComponent);
 
 export default Home;

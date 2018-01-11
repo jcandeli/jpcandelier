@@ -30,9 +30,14 @@ GalleryComponent.propTypes = {
     params: PropTypes.object
 };
 
+GalleryComponent.defaultProps = {
+    selectCategory: () => {},
+    params: {}
+};
+
 const Gallery = connect(
-  null,
-  actions
+    null,
+    actions
 )(GalleryComponent);
 
 export default Gallery;

@@ -43,23 +43,28 @@ export class MosaicComponent extends Component {
                     photo={photo}
                     onClick={() => selectPhoto(index)}
                     selected={(currentIndex === index)}
-                    key={index}
+                    key={photo.image}
                 />
             );
 
             if (((index + 1) % columns) === 0) {
                 const rowIndex = Math.floor(index / columns);
                 rows.push(
-                    <div onClick={() => expandRow(rowIndex)} key={index} >
+                    <div
+                        role="button"
+                        tabIndex="0"
+                        onClick={() => expandRow(rowIndex)}
+                        key={rowIndex}
+                    >
                         <div className="thumbs">{row}</div>
                         {
                             (expandedRow === rowIndex && currentIndex >= 0)
-                            ? <ImagePanel
-                                photo={photos[currentIndex]}
-                                next={() => selectPhoto(currentIndex + 1)}
-                                prev={() => selectPhoto(currentIndex - 1)}
-                                close={deselectPhoto}
-                            /> : null
+                                ? <ImagePanel
+                                    photo={photos[currentIndex]}
+                                    next={() => selectPhoto(currentIndex + 1)}
+                                    prev={() => selectPhoto(currentIndex - 1)}
+                                    close={deselectPhoto}
+                                /> : null
                         }
                     </div>
                 );
@@ -73,7 +78,6 @@ export class MosaicComponent extends Component {
 
 const mapStateToProps = ({
     photos,
-    selectedCategory,
     selectPhoto,
     deselectPhoto,
     expandRow,
@@ -81,7 +85,6 @@ const mapStateToProps = ({
     currentIndex
 }) => ({
     photos,
-    selectedCategory,
     selectPhoto,
     deselectPhoto,
     expandRow,
@@ -91,7 +94,6 @@ const mapStateToProps = ({
 
 MosaicComponent.propTypes = {
     columns: PropTypes.number,
-    selectedCategory: PropTypes.string,
     photos: PropTypes.array,
     selectPhoto: PropTypes.func,
     deselectPhoto: PropTypes.func,
@@ -101,12 +103,18 @@ MosaicComponent.propTypes = {
 };
 
 MosaicComponent.defaultProps = {
-    columns: 6
+    columns: 6,
+    photos: [],
+    selectPhoto: () => {},
+    deselectPhoto: () => {},
+    expandRow: () => {},
+    expandedRow: 0,
+    currentIndex: -1
 };
 
 const Mosaic = connect(
-  mapStateToProps,
-  actions
+    mapStateToProps,
+    actions
 )(MosaicComponent);
 
 export default Mosaic;
