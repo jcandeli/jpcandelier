@@ -537,7 +537,7 @@ export default [
         camera: 'Kiev 60 TTL'
     },
     {
-        image: '126395875_cabadfece2_o.png',
+        image: '126395875_cabadfece2_o.jpg',
         category: 'life',
         title: 'double',
         camera: 'polaroid'
@@ -570,7 +570,7 @@ export default [
         camera: 'Holga'
     },
     {
-        image: '311278822_a0f27908ce_o.png',
+        image: '311278822_a0f27908ce_o.jpg',
         category: 'life',
         title: 'Lake Champlain',
         location: 'Burlington, VT',
@@ -613,7 +613,7 @@ export default [
         camera: 'Nikon D70'
     },
     {
-        image: '396507528_515728ea15_o.png',
+        image: '396507528_515728ea15_o.jpg',
         category: 'life',
         title: 'untitled',
         camera: 'polaroid'
@@ -731,6 +731,13 @@ export default [
         camera: 'Nikon D70'
     },
     {
+        image: 'DSC_6339.jpg',
+        category: 'bands',
+        title: 'J-Go',
+        location: 'Los Angeles, CA',
+        camera: 'Nikon D750'
+    },
+    {
         image: '494947719_662a2f4555_b.jpg',
         category: 'bands',
         title: 'Roots of Creation',
@@ -747,6 +754,14 @@ export default [
         category: 'bands',
         title: 'Vieux Farka Toure',
         camera: 'Nikon D70'
+    },
+    {
+        image: '21601462960_81675438f1_h.jpg',
+        category: 'bands',
+        title: 'The Pham Entertainment Artists',
+        location: 'Los Angeles, CA',
+        camera: 'Nikon D90',
+        home: true
     },
     {
         image: '2546592236_144d013dc2_o.jpg',
@@ -767,6 +782,12 @@ export default [
         title: 'Myra Flynn',
         camera: 'kiev 60 ttl',
         home: true
+    },
+    {
+        image: '21878076885_a25bf20ff4_h.jpg',
+        category: 'bands',
+        title: 'The Pham Entertainment',
+        camera: 'Nikon D90'
     },
     {
         image: '3044484361_d512b64872_b.jpg',
@@ -825,12 +846,6 @@ export default [
         home: true
     },
     {
-        image: '470610998_80a971a6a3_b.jpg',
-        category: 'bands',
-        title: 'Lamine Toure',
-        camera: 'Nikon D70'
-    },
-    {
         image: '15164906844_497af985ae_b.jpg',
         category: 'travel',
         title: 'Long Boat',
@@ -857,14 +872,6 @@ export default [
         title: 'Pluto',
         location: 'Los Angeles, CA',
         camera: 'Nikon D90'
-    },
-    {
-        image: '21690245648_56222bc68b_b.jpg',
-        category: 'bands',
-        title: 'The Pham Entertainment Artists',
-        location: 'Los Angeles, CA',
-        camera: 'Nikon D90',
-        home: true
     },
     {
         image: '22884236393_a3b5082c63_b.jpg',
