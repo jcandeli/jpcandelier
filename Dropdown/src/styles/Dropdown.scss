@@ -1,0 +1,81 @@
+@import "../../../theme/src/variables";
+@import "../../../theme/src/atomic";
+
+.dropdown {
+    @extend .pointer;
+    @extend .bordered;
+    @extend .rounded;
+}
+
+.dropdown-list {
+    position: relative;
+    @extend .inline-block;
+
+    &:focus {
+        outline: none;
+    }
+
+    .dropdown-btn {
+        @extend .dropdown;
+        @extend .inline-block;
+        @extend .text-light;
+        @extend .padded;
+        background-color: #fff;
+        min-width: 200px;
+    }
+
+    .chevron-down {
+        color: $brand-info;
+    }
+
+    .chevron-down, .chevron-right {
+        float: right;
+    }
+
+    & > .menu {
+        top: 100%;
+        left: 0;
+
+        .sub-menu {
+            left: 99%;
+            top: 0;
+        }
+
+        li .sub-menu {
+            white-space: nowrap;
+        }
+    }
+
+    .menu, .sub-menu {
+        @extend .dropdown;
+        @extend .padded-sm;
+        @extend .margined-none;
+        position: absolute;
+        z-index: 1000;
+        background-color: #fff;
+        min-width: 200px;
+        box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    li {
+        @extend .pointer;
+        @extend .padded-sm;
+        position: relative;
+        list-style: none;
+        &:focus,
+        &:hover {
+            background-color: lighten($color-primary, 45%);
+        }
+
+        &.active {
+            background-color: lighten($color-primary, 30%);
+        }
+    }
+
+    .dropdown-item, .checkbox-item {
+        &.selected {
+            background-color: $color-primary;
+            color: #fff;
+        }
+    }
+}

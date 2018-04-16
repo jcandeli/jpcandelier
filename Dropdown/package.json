@@ -1,0 +1,70 @@
+{
+  "name": "@jcandeli/dropdown",
+  "version": "1.0.0",
+  "description": "React Dropdown Component",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm run test:coverage && npm run test:lint",
+    "test:coverage": "mocha-webpack --colors --require ../../test.setup.js --webpack-config ../../test.config.js \"src/tests/*.spec.js\"",
+    "test:lint": "eslint -c ../../.eslintrc.json src tests",
+    "test:watch": "mocha-webpack --colors --watch --require ../../test.setup.js --webpack-config ../../test.config.js \"src/tests/*.spec.js\"",
+    "build": "webpack --verbose --colors --display-error-details --config webpack.config.js",
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "url": "git+https://github.com/jcandeli/jpcandelier.git",
+    "type": "git"
+  },
+  "keywords": [
+    "react",
+    "dropdown",
+    "component"
+  ],
+  "author": "JP Candelier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcandeli/jpcandelier/issues"
+  },
+  "homepage": "https://github.com/jcandeli/jpcandelier#readme",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.5.4",
+    "react-icons": "^2.2.3"
+  },
+  "devDependencies": {
+    "@storybook/addon-info": "^3.1.6",
+    "@storybook/addon-knobs": "3.1.6",
+    "@storybook/addon-options": "3.1.6",
+    "@storybook/react": "3.1.7",
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "chai": "^3.3.0",
+    "chai-enzyme": "^0.5.0",
+    "css-loader": "^0.26.0",
+    "enzyme": "^2.4.1",
+    "eslint": "^3.3.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-loader": "^1.5.0",
+    "eslint-plugin-import": "^1.10.0",
+    "eslint-plugin-jsx-a11y": "^2.1.0",
+    "eslint-plugin-react": "^6.0.0 ",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "jsdom": "^9.8.3",
+    "mocha": "^3.0.2",
+    "mocha-webpack": "^0.7.0",
+    "node-sass": "^3.13.0",
+    "sass-loader": "^4.0.2",
+    "sinon": "^2.1.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "webpack-node-externals": "^1.5.4"
+  }
+}
