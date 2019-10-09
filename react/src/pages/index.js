@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Link } from 'gatsby';
 import { actions, constants } from '../state/createStore';
-import Thumb from './Thumb';
-import Footer from './Footer';
+import Thumb from '../components/Thumb';
+import Footer from '../components/Footer';
 
 export class HomeComponent extends Component {
   componentWillMount() {

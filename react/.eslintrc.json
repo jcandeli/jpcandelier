@@ -1,80 +1,39 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "experimentalDecorators": true,
+      "jsx": true
     },
-    "extends": "airbnb",
-    "parser": "babel-eslint",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "experimentalObjectRestSpread": true,
-            "experimentalDecorators": true,
-            "jsx": true
-        },
-        "sourceType": "module",
-        "experimentalDecorators": true
-    },
-    "plugins": ["react", "import"],
-    "rules": {
-        "require-jsdoc": 1,
-        "valid-jsdoc": 1,
-        "indent": [
-            "error",
-            4
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "no-unused-vars": [
-            "error",
-            { "vars": "local" }
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ],
-        "comma-dangle": [
-            "error",
-            "never"
-        ],
-        "arrow-parens": [
-            "off"
-        ],
-        "react/jsx-filename-extension": [
-            "off"
-        ],
-        "react/require-extension": [
-            "off"
-        ],
-        "import/extensions": [
-            "warn",
-            "never"
-        ],
-        "import/no-extraneous-dependencies" : [
-            "off"
-        ],
-        "react/jsx-indent": [
-            "error",
-            4
-        ],
-        "react/jsx-indent-props": [
-            "error",
-            4
-        ],
-        "react/jsx-boolean-value": [
-            "off"
-        ],
-        "react/prefer-stateless-function": 0,
-        "jsx-a11y/href-no-hash": [
-            "off"
-        ],
-        "react/forbid-prop-types": [
-            "off"
-        ]
-    }
+    "sourceType": "module",
+    "experimentalDecorators": true
+  },
+  "plugins": ["react", "import"],
+  "rules": {
+    "require-jsdoc": 1,
+    "valid-jsdoc": 1,
+    "indent": ["error", 4],
+    "linebreak-style": ["error", "unix"],
+    "no-unused-vars": ["error", { "vars": "local" }],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "comma-dangle": ["error", "never"],
+    "arrow-parens": ["off"],
+    "react/jsx-filename-extension": ["off"],
+    "react/require-extension": ["off"],
+    "import/extensions": ["warn", "never"],
+    "import/no-extraneous-dependencies": ["off"],
+    "react/jsx-indent": ["error", 4],
+    "react/jsx-indent-props": ["error", 4],
+    "react/jsx-boolean-value": ["off"],
+    "react/prefer-stateless-function": 0,
+    "jsx-a11y/href-no-hash": ["off"],
+    "react/forbid-prop-types": ["off"]
+  }
 }
