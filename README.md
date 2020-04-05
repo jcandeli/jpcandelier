@@ -15,6 +15,4 @@ My personal website and portfolio site for http://jpcandelier.com
 * ReactSpring(?)
 * React Suspense
 * Emotion JS
-* Query by camera
-* Query by country
 https://github.com/jcandeli/jpcandelier/issues
