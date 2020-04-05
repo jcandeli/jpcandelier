@@ -5,7 +5,16 @@ My personal website and portfolio site for http://jpcandelier.com
 * React Router
 * Redux
 * Webpack
-* ES6 (Babel)
 
 # To Do List:
+React Hooks
+NextJS
+Sagas
+Typescript
+GraphQL(?)
+ReactSpring(?)
+React Suspense
+Emotion JS
+Query by camera
+Query by country
 https://github.com/jcandeli/jpcandelier/issues
