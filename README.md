@@ -8,7 +8,7 @@ My personal website and portfolio site for http://jpcandelier.com
 
 # To Do List:
 * React Hooks
-* NextJS
+* NextJS or Gatsby
 * Sagas
 * Typescript
 * GraphQL(?)
