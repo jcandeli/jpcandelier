@@ -13,24 +13,15 @@ module.exports = {
   //       path: `${__dirname}/src/pages/`,
   //     },
   //   },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `img`,
-        path: `${__dirname}/src/img`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `fonts`,
-        path: `${__dirname}/src/fonts`,
-      },
-    },
-  //   `gatsby-transformer-sharp`,
-  //   `gatsby-plugin-sharp`,
+    // `gatsby-transformer-sharp`,
+    // `gatsby-plugin-sharp`,
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${__dirname}/src/images`,
+    //   },
+    // },
   //   {
   //     resolve: `gatsby-plugin-manifest`,
   //     options: {

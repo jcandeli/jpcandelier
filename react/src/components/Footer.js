@@ -7,7 +7,7 @@ export default class Footer extends Component {
         <div className="inline-block padded-lg">
           <a href="mailto:jpcandelier@gmail.com">
             <img
-              src="/img/email.svg"
+              src="images/email.svg"
               className="email-icon"
               alt="JP Candelier email"
             />
@@ -24,7 +24,7 @@ export default class Footer extends Component {
             rel="noopener noreferrer"
           >
             <img
-              src="/img/github-logo.svg"
+              src="/images/github-logo.svg"
               className="github-logo"
               alt="JP Candelier Github"
             />

@@ -8,7 +8,7 @@ export class NavigationComponent extends Component {
     return (
       <nav className="main-nav bg-light padded">
         <Link to="/">
-          <img src="/img/logo.svg" className="logo" alt="logo" />
+          <img src="images/logo.svg" className="logo" alt="logo" />
         </Link>
 
         <div className="name inline-block text-middle">
