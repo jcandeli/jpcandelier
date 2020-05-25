@@ -2,17 +2,15 @@
 My personal website and portfolio site for http://jpcandelier.com
 
 * React JS
-* React Router
+* React Hooks
+* NextJS
 * Redux
-* Webpack
+* Emotion JS
+* Typescript
+* Storybook
+* redux selectors
 
 # To Do List:
-* React Hooks
-* NextJS or Gatsby
-* Sagas
-* Typescript
-* GraphQL(?)
-* ReactSpring(?)
+* ReactSpring
 * React Suspense
-* Emotion JS
 https://github.com/jcandeli/jpcandelier/issues

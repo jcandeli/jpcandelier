@@ -1,5 +1,9 @@
 import photoDB from '../photoDB';
 
+const selectors = {
+  
+};
+
 export const constants = {
     SELECT_PHOTO: 'SELECT_PHOTO',
     DESELECT_PHOTO: 'DESELECT_PHOTO',
