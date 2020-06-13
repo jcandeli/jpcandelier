@@ -14,6 +14,7 @@ const Thumbnail = styled.img`
 `;
 
 const Image = styled.img`
+  object-fit: cover;
   max-width: 90vw;
   max-height: 90vh;
 `;

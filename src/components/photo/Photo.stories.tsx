@@ -11,4 +11,4 @@ export default {
 const photo: PhotoType = photos[0];
 
 export const Thumbnail = () => <Photo photo={photo} thumbnail />;
-export const FullImage = () => <Photo photo={photo} />;
+export const ScaledImage = () => <Photo photo={photo} />;

@@ -19,6 +19,7 @@
     "next": "9.3.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-spring": "^8.0.27",
     "typescript": "^3.9.3"
   },
   "devDependencies": {
