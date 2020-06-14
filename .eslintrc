@@ -1,0 +1,70 @@
+{
+  "env": {
+    "browser": true,
+    "jasmine": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "standard-with-typescript",
+    "standard-react",
+    "prettier",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "prettier/@typescript-eslint"
+  ],
+  "globals": {
+    "$": false,
+    "ADVISOR_JSON": false,
+    "Bugsnag": false,
+    "CONFIG_JSON": false,
+    "MARKET_JSON": false,
+    "ol": false
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["babel", "import", "react", "react-hooks", "prettier", "@typescript-eslint", "jest"],
+  "rules": {
+    "camelcase": 0,
+    "import/prefer-default-export": 0,
+    "import/extensions": 0,
+    "max-len": [
+      "error",
+      {
+        "code": 100
+      }
+    ],
+    "prettier/prettier": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react/no-did-update-set-state": 0
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": ["warn"],
+        "@typescript-eslint/explicit-member-accessibility": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/no-unused-vars": [2, { "args": "none" }],
+        "@typescript-eslint/member-delimiter-style": [
+          2,
+          { "singleline": { "delimiter": "semi", "requireLast": false } }
+        ],
+        "react/prop-types": "off",
+        "@typescript-eslint/strict-boolean-expressions": "off"
+      }
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.base.config.js"
+      }
+    },
+    "react": {
+      "version": "detect"
+    }
+  }
+}

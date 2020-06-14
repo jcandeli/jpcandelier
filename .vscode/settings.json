@@ -1,0 +1,8 @@
+{
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all",
+    "prettier.jsxSingleQuote": true,
+    "prettier.configPath": "./.prettierrc",
+    "prettier.requireConfig": true,
+    "prettier.printWidth": 100
+}
