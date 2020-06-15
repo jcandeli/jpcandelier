@@ -28,8 +28,7 @@ export const Footer = () => (
     <Email>
       <a href="mailto:jpcandelier@gmail.com">
         <Icon src="/img/email.svg" alt="JP Candelier email" />
-      </a>{' '}
-      <span className="inline-block padded-sm-left">jpcandelier&#64;gmail.com</span>
+      </a> jpcandelier&#64;gmail.com
     </Email>
 
     <Github>
@@ -38,8 +37,7 @@ export const Footer = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span>source code</span>{' '}
-        <Icon src="/img/github-logo.svg" alt="JP Candelier Github" />
+        <span>source code</span> <Icon src="/img/github-logo.svg" alt="JP Candelier Github" />
       </a>
     </Github>
   </footer>

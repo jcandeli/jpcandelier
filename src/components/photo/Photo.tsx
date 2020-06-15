@@ -4,6 +4,7 @@ import { PhotoType } from '../../types';
 
 interface ThumbnailProps {
   url: string;
+  onPhotoClick: (photo: PhotoType) => void;
 }
 
 const Thumbnail = styled.div<ThumbnailProps>`
@@ -25,11 +26,14 @@ const Image = styled.img`
 interface PhotoProps {
   photo: PhotoType;
   thumbnail: boolean;
+  onPhotoClick: (photo: PhotoType) => void;
 }
 
-export const Photo: React.FC<PhotoProps> = ({ photo, thumbnail }) => {
+export const Photo: React.FC<PhotoProps> = ({ photo, thumbnail, onPhotoClick }) => {
   const { category, title, image, location } = photo;
-  return thumbnail ?
-    <Thumbnail url={`/img/${category}/thumbs/${image}`} />:
-    <Image src={`/img/${category}/${image}`}  alt={`${title} - ${location}`}/>;
+  return thumbnail ? (
+    <Thumbnail url={`/img/${category}/thumbs/${image}`} onClick={() => onPhotoClick(photo)} />
+  ) : (
+    <Image src={`/img/${category}/${image}`} alt={`${title} - ${location}`} />
+  );
 };

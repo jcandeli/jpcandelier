@@ -18,22 +18,23 @@ interface GalleryProps {
 export const Gallery: React.FC<GalleryProps> = ({ category, photos }) => {
   const title = `JP Candelier Photography - ${category} photos`;
   const [selectedCategory, setSelectedCategory] = useState<Category>(category);
+  const [selectedPhoto, setSelectedPhoto] = useState<PhotoType | undefined>();
+
   return (
     <>
       <Head>
         <title>{title}</title>
         <meta property="og:title" content={title} />
       </Head>
-
       <Header selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
-      <PhotoGrid photos={photos} />
+      <PhotoGrid photos={photos} onPhotoClick={setSelectedPhoto} />
       <Footer />
     </>
   );
 };
 
 export const getStaticPaths = async () => (
-  await { paths: ['/gallery/travel', '/gallery/life', '/gallery/bands'], fallback: false }
+  { paths: ['/gallery/travel', '/gallery/life', '/gallery/bands'], fallback: false }
 );
 
 export const getStaticProps: GetStaticProps = async ({ params }) => ({

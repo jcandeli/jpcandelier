@@ -5,6 +5,7 @@ import { PhotoType } from '../../types';
 
 interface PhotoGripProps {
   photos: PhotoType[];
+  onPhotoClick?: (photo: PhotoType) => void;
 }
 
 const Container = styled.div`
@@ -14,10 +15,10 @@ const Container = styled.div`
   margin: 0 0.7%;
 `;
 
-export const PhotoGrid: React.FC<PhotoGripProps> = ({ photos }) => (
+export const PhotoGrid: React.FC<PhotoGripProps> = ({ photos, onPhotoClick = () => {} }) => (
   <Container>
     {photos.map((photo) => (
-      <Photo photo={photo} thumbnail key={photo.image} />
+      <Photo photo={photo} thumbnail key={photo.image} onPhotoClick={onPhotoClick} />
     ))}
   </Container>
 );
