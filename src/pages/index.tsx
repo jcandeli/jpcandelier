@@ -4,6 +4,7 @@ import Link from 'next/link';
 import photos from '../photoDB';
 import { PhotoType } from '../types';
 import { Photo } from '../components/photo/Photo';
+import { PhotoGrid } from '../components/photo-grid/PhotoGrid';
 import { Footer } from '../components/footer/Footer';
 
 interface HomeProps {
@@ -85,13 +86,7 @@ const Home: React.FC<HomeProps> = ({ photos }) => (
 
       <Logo src="/img/logo.svg" alt="logo" />
     </Panel>
-
-    <div className="thumbs">
-      {photos.map((photo) => (
-        <Photo photo={photo} key={photo.image} thumbnail />
-      ))}
-    </div>
-
+    <PhotoGrid photos={photos}/>
     <Footer />
   </>
 );

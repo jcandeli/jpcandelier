@@ -49,20 +49,27 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Body>
-          {/* TODO: make this comment work in page source */}
-          {/* 
-            Having a look around? Feel free to visit my github repository to see the code
-            and details for how I build this site!
-            https://github.com/jcandeli/jpcandelier
-            Website built with:
-            React
-            React Hooks
-            NextJS
-            Typescript
-            Emotion JS
-            Jest
-            Storybook
-            */}
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `<!-- 
+                                                                   _ 
+              |__| _   . _  _    _   | _  _ |    _  _ _     _  _|   )
+              |  |(_|\/|| )(_)  (_|  |(_)(_)|(  (_|| (_)|_|| )(_|  . 
+                            _/                                                                                                                                                                                                     
+              Feel free to visit my Github repository to see the code and details for how I build this site!
+              https://github.com/jcandeli/jpcandelier
+              Website built with:
+              React
+              React Hooks
+              Typescript
+              Emotion
+              NextJS
+              Jest
+              Storybook
+              
+          -->`,
+            }}
+          />
           <Main />
           <NextScript />
         </Body>

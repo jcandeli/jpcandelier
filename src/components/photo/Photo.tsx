@@ -2,10 +2,18 @@ import styled from '@emotion/styled';
 import React from 'react';
 import { PhotoType } from '../../types';
 
-const Thumbnail = styled.img`
-  object-fit: cover;
-  width: 250px;
-  height: 250px;
+interface ThumbnailProps {
+  url: string;
+}
+
+const Thumbnail = styled.div<ThumbnailProps>`
+  width: 16%;
+  padding-bottom: 16%;
+  margin: 0.375% 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(${(props) => props.url});
 `;
 
 const Image = styled.img`
@@ -21,7 +29,7 @@ interface PhotoProps {
 
 export const Photo: React.FC<PhotoProps> = ({ photo, thumbnail }) => {
   const { category, title, image, location } = photo;
-  const thumbs = thumbnail ? '/thumbs' : '';
-  const Component = thumbnail ? Thumbnail : Image;
-  return <Component src={`/img/${category}${thumbs}/${image}`} alt={`${title} - ${location}`} />;
+  return thumbnail ?
+    <Thumbnail url={`/img/${category}/thumbs/${image}`} />:
+    <Image src={`/img/${category}/${image}`}  alt={`${title} - ${location}`}/>;
 };

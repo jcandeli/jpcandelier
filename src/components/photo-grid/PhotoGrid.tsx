@@ -1,16 +1,17 @@
 import styled from '@emotion/styled';
 import React from 'react';
-import { PhotoType } from 'redux/photos/types';
 import { Photo } from '../photo/Photo';
+import { PhotoType } from '../../types';
 
 interface PhotoGripProps {
   photos: PhotoType[];
 }
 
 const Container = styled.div`
-  width: 100%;
-  column-count: 5;
-  column-gap: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 0.7%;
 `;
 
 export const PhotoGrid: React.FC<PhotoGripProps> = ({ photos }) => (
