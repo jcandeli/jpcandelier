@@ -1,0 +1,26 @@
+# http://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{js,jsx,ts,tsx}]
+indent_size = 2
+
+[*.py]
+indent_size = 4
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.{scss,css,less}]
+indent_size = 2
+
+[*.html]
+indent_size = 2
+
+[*.{yml,yaml}]
+indent_size = 4
