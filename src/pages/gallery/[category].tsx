@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import { PhotoGrid } from '../../components/photo-grid/PhotoGrid';
-import { Header } from '../../components/header/Header';
 import { Footer } from '../../components/footer/Footer';
+import { Header } from '../../components/header/Header';
+import { Modal } from '../../components/modal/Modal';
+import { PhotoGrid } from '../../components/photo-grid/PhotoGrid';
 import photos from '../../photoDB';
 import { PhotoType } from '../../types';
 
@@ -28,6 +29,7 @@ export const Gallery: React.FC<GalleryProps> = ({ category, photos }) => {
       </Head>
       <Header selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       <PhotoGrid photos={photos} onPhotoClick={setSelectedPhoto} />
+      {selectedPhoto ? <Modal /> : null}
       <Footer />
     </>
   );

@@ -64,8 +64,6 @@ class MyDocument extends Document {
               Typescript
               Emotion
               NextJS
-              Jest
-              Storybook
               
           -->`,
             }}
