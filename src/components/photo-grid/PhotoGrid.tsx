@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import React from 'react';
+import { useTrail, animated } from 'react-spring';
 import { Photo } from '../photo/Photo';
 import { PhotoType } from '../../types';
 
@@ -15,10 +16,20 @@ const Container = styled.div`
   margin: 0 0.7%;
 `;
 
-export const PhotoGrid: React.FC<PhotoGripProps> = ({ photos, onPhotoClick = () => {} }) => (
-  <Container>
-    {photos.map((photo) => (
-      <Photo photo={photo} thumbnail key={photo.image} onPhotoClick={onPhotoClick} />
-    ))}
-  </Container>
-);
+const AnimatePhoto = animated(Photo);
+
+export const PhotoGrid: React.FC<PhotoGripProps> = ({ photos, onPhotoClick = () => {} }) => {
+  const trail = useTrail(photos.length, {
+    config: { mass: 5, tension: 2000, friction: 200 },
+    opacity: 0,
+    from: { opacity: 0 },
+  });
+
+  return (
+    <Container>
+      {trail.map((styles, index) => (
+        <AnimatePhoto photo={photos[index]} thumbnail key={index} style={styles} onPhotoClick={onPhotoClick} />
+      ))}
+    </Container>
+  );
+}

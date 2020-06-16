@@ -61,11 +61,10 @@ class MyDocument extends Document {
               Website built with:
               React
               React Hooks
+              React Spring
               Typescript
               Emotion
               NextJS
-              Jest
-              Storybook
               
           -->`,
             }}
